@@ -394,14 +394,17 @@
       "id": "7",
       "cas_od": "2021 08 12 17 07 59",
       "cas_do": "2021 08 12 17 37 59",
-      "link" : "https://youtu.be/uOCKzBgodw0?si=YBat199ZkDlNIE8M",
+      "link": "https://youtu.be/uOCKzBgodw0?si=YBat199ZkDlNIE8M",
       "tagy": [
         "Atmosféra na chate",
         "Miroslav Bödör (Starý)",
         "Robert Kaliňák",
         "Finančné schémy",
         "Marek Para",
-        "príhody"
+        "príhody",
+        "Ľudovít Makó",
+        "František Imrecze",
+        "Norbert Bödör (Noro)"
       ],
       "poznámky": [
         {
@@ -646,11 +649,13 @@
       "id": "10",
       "cas_od": "2021 08 12 18 37 59",
       "cas_do": "2021 08 12 19 07 59",
+      "link": "https://youtu.be/KRJanzrcmBU?si=5BtKsUkAiTiGohOv",
       "tagy": [
         "Atmosféra na chate",
         "Robert Kaliňák",
         "Miroslav Bödör (Starý)",
-        "Kuciak"
+        "Kuciak",
+        "hlášky"
       ],
       "poznámky": [
         {
@@ -666,6 +671,14 @@
           "text": "Kali odíde, ohovárajú ho",
           "tagy": [
             "Atmosféra na chate",
+            "Robert Kaliňák"
+          ]
+        },
+        {
+          "cas": "11:00",
+          "text": "Podľa Paru Kali vedel o tom, že očistec a dobytkár sú kauzy, ktoré majú zakryť podvody s naftou - Gašpar: Kokot by som mu pichol tú vidličku do čela",
+          "tagy": [
+            "hlášky",
             "Robert Kaliňák"
           ]
         },
