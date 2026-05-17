@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ČIFÁRE - Databázový Prieskumník</title>
     <style>
         :root {
@@ -312,60 +311,88 @@
             font-style: italic;
         }
        
+        /* ==========================================================================
+           NOVÝ RESPONDZÍVNY DIZAJN PRE MOBILY
+           ==========================================================================
+        */
         @media screen and (max-width: 768px) {
-            
-            /* 1. Globálne nastavenia a reset okrajov */
-            body {
-                padding: 10px;
-                font-size: 14px; /* Mierne zmenšenie základného textu */
+            /* 1. Úplne skryjeme vrchnú hlavičku */
+            header {
+                display: none !important;
             }
 
-            /* 2. Zmena rozloženia (Layout) - Prvky idú pod seba namiesto vedľa seba */
-            .kontajner, 
-            .flex-sekcia, 
-            .riadok {
-                display: block !important; /* zruší flex/grid vedľa seba */
+            /* 2. Upravíme smer hlavného kontajneru (Hlavná časť hore, aside dole) */
+            .main-container {
+                flex-direction: column;
+            }
+
+            /* 3. Hlavný obsah (záznamy) vyplní maximum obrazovky */
+            main {
+                order: 1;
+                flex: 1;
+                padding: 12px;
+            }
+
+            /* 4. Aside premeníme na spodnú fixnú lištu s horizontálnym skrolovaním */
+            aside {
+                order: 2;
                 width: 100% !important;
-            }
-
-            /* 3. Stĺpce a Sidebar sa roztiahnu na celú šírku */
-            .stlpec, 
-            .sidebar, 
-            .hlavny-obsah {
-                width: 100% !important;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                margin-bottom: 15px; /* Medzera medzi prvkami pod sebou */
-            }
-
-            /* 4. Prvky pre dotyk (UX štandardy pre prsty) */
-            button, 
-            .tlacidlo, 
-            input[type="text"], 
-            input[type="file"], 
-            select {
-                width: 100% !important;     /* Tlačidlá a inputy budú na celú šírku */
-                min-height: 44px;           /* Minimálna výška pre pohodlné kliknutie prstom */
-                margin-bottom: 12px;
-                font-size: 16px !important; /* Dôležité: iOS automaticky približuje (zoomuje) inputy, ak majú menej ako 16px */
-                box-sizing: border-box;
-            }
-
-            /* 5. Responzívne nadpisy (zmenšenie písma) */
-            h1 { font-size: 22px !important; }
-            h2 { font-size: 18px !important; }
-            h3 { font-size: 16px !important; }
-
-            /* 6. Ochrana proti pretekaniu širokých tabuliek alebo veľkých elementov */
-            .tabulka-kontajner, 
-            .skrolovaci-box {
-                width: 100%;
-                overflow-x: auto; /* Ak je tabuľka príliš široká, dá sa v nej posúvať prstom doprava/doľava */
+                height: 75px; /* Kompaktný úzky pás */
+                min-height: 75px;
+                padding: 8px 12px;
+                background-color: var(--bg-sidebar);
+                border-right: none;
+                border-top: 1px solid var(--border-color);
+                
+                /* Zapnutie horizontálneho skrolovania */
+                flex-direction: row !important;
+                overflow-x: auto !important;
+                overflow-y: hidden !important;
+                align-items: center;
+                gap: 15px;
                 -webkit-overflow-scrolling: touch;
             }
 
-            /* 7. Pomocná trieda pre skrytie vecí, ktoré na mobile netreba */
-            .skryt-na-mobile {
+            /* Hladší scrollbar pre mobilný spodný pás */
+            aside::-webkit-scrollbar {
+                height: 4px;
+            }
+            aside::-webkit-scrollbar-thumb {
+                background: var(--border-color);
+                border-radius: 2px;
+            }
+
+            /* 5. Prvky vo vnútri aside prispôsobíme horizontálnemu zobrazeniu */
+            aside .form-group {
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+                flex-shrink: 0; /* Zabráni stláčaniu prvkov */
+                width: auto !important;
+            }
+
+            aside .form-group label {
+                font-size: 11px;
+                white-space: nowrap;
+            }
+
+            aside select {
+                width: 130px !important; /* Fixnejšia šírka na mobile aby boli vedľa seba */
+                padding: 6px 10px;
+                font-size: 14px;
+                height: 36px;
+            }
+
+            /* Prispôsobenie switchov */
+            aside .switch-container {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 13px;
+                padding: 0 5px;
+            }
+
+            /* 6. Skrytie nežiadúcich sekcií na mobile */
+            .mobile-hide {
                 display: none !important;
             }
         }
@@ -378,7 +405,6 @@
             <h1 id="mainTitle">ČIFÁRE</h1>
         </div>
         <div class="controls-section">
-            <!-- Filter podľa počtu tagov (Interval) -->
             <div class="slider-container">
                 <span id="intervalLabel" class="interval-text">Interval: 0 - 10</span>
                 <div class="slider-group">
@@ -391,7 +417,6 @@
                 </div>
             </div>
 
-            <!-- Prepínače (Switches) -->
             <label class="switch-container">
                 <input type="checkbox" id="wholeVideoSwitch" onchange="toggleWholeVideo(this.checked)"> Celé videá
             </label>
@@ -399,7 +424,6 @@
                 <input type="checkbox" id="showTagsSwitch" onchange="toggleShowTags(this.checked)"> Tagy
             </label>
 
-            <!-- Zoom textu -->
             <div class="zoom-buttons">
                 <button class="btn-zoom" onclick="zoomOut()" title="Zmenšiť text">-</button>
                 <button class="btn-zoom" onclick="zoomIn()" title="Zväčšiť text">+</button>
@@ -408,7 +432,6 @@
     </header>
 
     <div class="main-container">
-        <!-- Bočný ovládací panel -->
         <aside>
             <div class="form-group">
                 <label>Okruhy</label>
@@ -425,40 +448,46 @@
                 <select id="videoSelect" onchange="selectVideo(this.value)"></select>
             </div>
 
-            <div class="section-title">AKTUALIZOVAŤ</div>
+            <label class="switch-container">
+                <input type="checkbox" id="wholeVideoSwitchMobile" onchange="toggleWholeVideoMobile(this.checked)"> Celé videá
+            </label>
+            <label class="switch-container">
+                <input type="checkbox" id="showTagsSwitchMobile" onchange="toggleShowTags(this.checked)"> Tagy
+            </label>
 
-            <div class="form-group">
+            <div class="section-title mobile-hide">AKTUALIZOVAŤ</div>
+
+            <div class="form-group mobile-hide">
                 <label>Video (ID)</label>
                 <input type="text" id="videoEntry">
             </div>
 
-            <div class="form-group">
+            <div class="form-group mobile-hide">
                 <label>Poznámka</label>
                 <input type="text" id="noteEntry">
             </div>
 
-            <div class="form-group">
+            <div class="form-group mobile-hide">
                 <label>Čas</label>
                 <input type="text" id="timeEntry" placeholder="napr. 04:15">
             </div>
 
-            <div class="form-group">
+            <div class="form-group mobile-hide">
                 <label>Téma (Nový tag)</label>
                 <input type="text" id="newTagEntry">
             </div>
 
-            <div class="form-group">
+            <div class="form-group mobile-hide">
                 <label>Okruh</label>
                 <select id="tagCategorySelect"></select>
             </div>
 
-            <div class="btn-group">
+            <div class="btn-group mobile-hide">
                 <button class="btn btn-secondary" onclick="clearEntries()">VYČISTIŤ</button>
                 <button class="btn btn-primary" onclick="updateEntry()">PRIDAŤ</button>
             </div>
 
-            <!-- Správa dátových súborov -->
-            <div class="file-actions">
+            <div class="file-actions mobile-hide">
                 <div class="form-group">
                     <label>Načítať súbor hlavna_db.json</label>
                     <input type="file" id="jsonFileInput" accept=".json" onchange="loadJsonFile(event)">
@@ -467,7 +496,6 @@
             </div>
         </aside>
 
-        <!-- Hlavná časť so záznamami -->
         <main id="contentFrame">
             <div style="color: var(--text-secondary); text-align: center; margin-top: 50px; font-style: italic;">
                 Načítajte súbor hlavna_db.json pomocou tlačidla v ľavom dolnom rohu.
@@ -636,7 +664,7 @@
             }
         }
 
-        // Vykreslenie logov do hlavného okna (Replikácia build_log z explorer.py)
+        // Vykreslenie logov do hlavného okna
         function buildLog(filtrovaneVidea) {
             const contentFrame = document.getElementById("contentFrame");
             contentFrame.innerHTML = "";
@@ -698,12 +726,10 @@
                     });
                 }
 
-                // Preskočenie celého videa ak nemá poznámky a nie sme v režime "Celé videá"
                 if (!whole_video && !hasVisibleNotes) {
                     return;
                 }
 
-                // Režim "Celé videá" - kontrola či aspoň jedna poznámka spĺňa vybraný tag
                 if (whole_video && activeTag !== "VŠETKY") {
                     let nejakyMatch = false;
                     if (vid.poznámky) {
@@ -720,7 +746,6 @@
                     if (!nejakyMatch) return;
                 }
 
-                // Vytvorenie kontajneru pre jedno video
                 const videoBox = document.createElement("div");
                 videoBox.className = "video-box";
 
@@ -755,7 +780,7 @@
             }
         }
 
-        // Zväčšovanie / zmenšovanie písma (Zoom)
+        // Zväčšovanie / zmenšovanie písma
         function zoomIn() {
             text_size += 1;
             selectTag();
@@ -768,7 +793,7 @@
             }
         }
 
-        // Úprava intervalov počtu tagov
+        // Úprava intervalov
         function updateMin(val) {
             const sliderMax = document.getElementById("sliderMax");
             if (parseInt(val) > parseInt(sliderMax.value)) {
@@ -793,11 +818,26 @@
 
         function toggleWholeVideo(checked) {
             whole_video = checked;
+            document.getElementById("wholeVideoSwitchMobile").checked = checked; // Synchronizácia s mobilným switchom
             selectTag();
         }
 
         function toggleShowTags(checked) {
             show_tags = checked;
+            document.getElementById("showTagsSwitchMobile").checked = checked; // Synchronizácia s mobilným switchom
+            selectTag();
+        }
+
+        // Špeciálne funkcie pre prepínanie z mobilného menu (aby ostali stavy synchronizované s desktop prvkami)
+        function toggleWholeVideoMobile(checked) {
+            whole_video = checked;
+            document.getElementById("wholeVideoSwitch").checked = checked;
+            selectTag();
+        }
+
+        function toggleShowTagsMobile(checked) {
+            show_tags = checked;
+            document.getElementById("showTagsSwitch").checked = checked;
             selectTag();
         }
 
@@ -810,7 +850,7 @@
             document.getElementById("tagCategorySelect").value = "NEZARADENÉ";
         }
 
-        // Pridanie/Aktualizácia záznamu do DB v pamäti (Replikácia update_entry)
+        // Pridanie/Aktualizácia záznamu
         function updateEntry() {
             const videoIdStr = document.getElementById("videoEntry").value.trim();
             const noteText = document.getElementById("noteEntry").value.trim();
@@ -859,8 +899,6 @@
                     }
                     existingNote = { "cas": noteTime, "text": noteText, "tagy": [] };
                     najdeneVideo.poznámky.push(existingNote);
-                    
-                    // In-place zoradenie poznámok podľa času (MM:SS)
                     najdeneVideo.poznámky.sort((a, b) => a.cas.localeCompare(b.cas));
                 }
             }
@@ -894,24 +932,21 @@
             alert("Záznam bol úspešne upravený v pamäti.");
         }
 
-        // 1. SPOLOČNÁ FUNKCIA: Spracuje text na JSON a inicializuje aplikáciu
         function spracujSkontrolovanéData(jsonText, isAuto = false) {
             try {
                 const parsed = JSON.parse(jsonText);
                 if (parsed.videa && parsed.metatagy) {
                     DATABASE = parsed;
                     initApp();
-                    // Alert vyskočí len pri manuálnom nahrávaní, pri automatickom by otravoval
                     if (!isAuto) alert("Súbor bol úspešne načítaný do prieskumníka!");
                 } else {
-                    if (!isAuto) alert("Chyba: Súbor nemá požadovanú štruktúru (chýbajú kľúče 'videa' alebo 'metatagy').");
+                    if (!isAuto) alert("Chyba: Súbor nemá požadovanú štruktúru.");
                 }
             } catch (err) {
                 if (!isAuto) alert("Chyba pri parsovaní JSON súboru: " + err.message);
             }
         }
 
-        // 2. TVOJA UPRAVENÁ FUNKCIA: Slúži ako manuálna záloha (kliknutím na tlačidlo)
         function loadJsonFile(event) {
             const file = event.target.files[0];
             if (!file) return;
@@ -923,24 +958,23 @@
             reader.readAsText(file, "UTF-8");
         }
 
-        // 3. NOVÁ FUNKCIA: Skúsi automaticky stiahnuť súbor z rovnakého priečinka
         function autoLoadJson() {
             fetch('./hlavna_db.json')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error("Súbor hlavna_db.json sa nenašiel na serveri/v priečinku.");
+                        throw new Error("Súbor sa nenašiel.");
                     }
                     return response.text();
                 })
                 .then(data => {
-                    spracujSkontrolovanéData(data, true); // true = tiché načítanie bez alertu
-                    console.log("Databáza hlavna_db.json bola automaticky načítaná.");
+                    spracujSkontrolovanéData(data, true);
+                    console.log("Databáza bola automaticky načítaná.");
                 })
                 .catch(err => {
-                    console.warn("Automatické načítanie zlyhalo (CORS alebo chýbajúci súbor). Použite manuálne tlačidlo. Detaily:", err.message);
+                    console.warn("Automatické načítanie zlyhalo, použite tlačidlo.", err.message);
                 });
         }
-        // Stiahnutie upravenej databázy ako JSON súboru (Synchronizácia tagov z on_closing)
+
         function downloadJsonDatabase() {
             DATABASE.videa.forEach(video => {
                 if (video.poznámky) {
