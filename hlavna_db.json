@@ -1,0 +1,2770 @@
+{
+  "databaza_nazov": "Poznámky z poľovníckej chaty Čifáre",
+  "metatagy": {
+    "VŠETKY": [],
+    "NEZARADENÉ": [
+      "pomsta",
+      "hlášky",
+      "dôležité",
+      "príhody",
+      "Záleská",
+      "korupcia",
+      "obavy",
+      "mafia",
+      "čakanie"
+    ],
+    "Naši ľudia": [
+      "Robert Fico",
+      "Robert Kaliňák",
+      "Marek Para",
+      "Miroslav Bödör (Starý)",
+      "Norbert Bödör (Noro)",
+      "Tibor Gašpar",
+      "Pavol Gašpar",
+      "Dušan Kováčik",
+      "František Imrecze",
+      "Vladimír Pčolinský",
+      "Kočner",
+      "Vilagi",
+      "Lučanský"
+    ],
+    "Opozícia a nepriatelia": [
+      "Ľudovít Makó",
+      "Vladimír Pčolinský",
+      "Daniel Lipšic",
+      "Zuzana Čaputová",
+      "Ján Čurilla",
+      "Záleská"
+    ],
+    "Neutrálne osoby": [
+      "Zuzana Plačková",
+      "Maroš Žilinka",
+      "Peter Pellegrini",
+      "Kuciak"
+    ],
+    "Sledovane_kauzy": [
+      "Kauza Očistec",
+      "Kauza Dobytkár",
+      "Kauza Kováčik",
+      "Kauza Mýtnik",
+      "Kauza Bonaparte",
+      "Zločinecká skupina",
+      "Mýtnik"
+    ],
+    "Institucie_a_funkcionari": [
+      "Špeciálna prokuratúra",
+      "Generálna prokuratúra",
+      "Inšpekcia (ÚIS)",
+      "Kajúcnici"
+    ],
+    "Strategia_a_zazemie": [
+      "Médiá a tlačovky",
+      "Protesty a demonštrácie",
+      "Väzobné podmienky",
+      "Paragraf 363",
+      "Finančné schémy",
+      "Finančné schémy (DPH)",
+      "Diskreditácia oponentov",
+      "Reforma prokuratúry",
+      "Atmosféra na chate",
+      "Otec / Rodina",
+      "Zdravotný stav"
+    ]
+  },
+  "index_spolocnych_tem": {
+    "Robert Fico": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "12",
+      "13",
+      "14",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "30",
+      "31",
+      "32"
+    ],
+    "Robert Kaliňák": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "16",
+      "26"
+    ],
+    "Marek Para": [
+      "1",
+      "5",
+      "7",
+      "12",
+      "13",
+      "14",
+      "16",
+      "20",
+      "21",
+      "26",
+      "29",
+      "30"
+    ],
+    "Miroslav Bödör (Starý)": [
+      "1",
+      "4",
+      "7",
+      "10",
+      "11",
+      "14",
+      "15",
+      "17",
+      "20",
+      "22",
+      "23",
+      "24",
+      "26",
+      "27",
+      "28",
+      "30",
+      "32"
+    ],
+    "Norbert Bödör (Noro)": [
+      "5",
+      "8",
+      "10",
+      "15",
+      "16",
+      "20",
+      "21",
+      "28",
+      "31"
+    ],
+    "Tibor Gašpar": [
+      "2",
+      "5",
+      "9",
+      "10",
+      "20",
+      "21",
+      "24",
+      "31",
+      "22",
+      "27"
+    ],
+    "Pavol Gašpar": [
+      "2",
+      "3",
+      "5",
+      "19",
+      "20",
+      "21",
+      "22",
+      "24",
+      "26",
+      "27",
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "Ľudovít Makó": [
+      "2",
+      "5",
+      "8",
+      "9",
+      "10",
+      "26",
+      "30",
+      "31"
+    ],
+    "Maroš Žilinka": [
+      "5",
+      "10",
+      "13",
+      "19",
+      "22",
+      "26",
+      "31"
+    ],
+    "Daniel Lipšic": [
+      "12",
+      "13",
+      "16",
+      "19",
+      "21",
+      "22",
+      "24",
+      "31"
+    ],
+    "Zuzana Čaputová": [
+      "1",
+      "24",
+      "30",
+      "31"
+    ],
+    "Peter Pellegrini": [
+      "2",
+      "3",
+      "13",
+      "24",
+      "27"
+    ],
+    "Ján Čurilla": [
+      "26",
+      "27",
+      "30",
+      "31"
+    ],
+    "Dušan Kováčik": [
+      "1",
+      "2",
+      "14",
+      "20",
+      "30",
+      "31"
+    ],
+    "František Imrecze": [
+      "2",
+      "8",
+      "24"
+    ],
+    "Vladimír Pčolinský": [
+      "22",
+      "31",
+      "32"
+    ],
+    "Kauza Očistec": [
+      "5",
+      "21",
+      "26",
+      "31"
+    ],
+    "Kauza Dobytkár": [
+      "16",
+      "21"
+    ],
+    "Kajúcnici": [
+      "10",
+      "23"
+    ],
+    "Zločinecká skupina": [
+      "9",
+      "10"
+    ],
+    "Médiá a tlačovky": [
+      "1",
+      "5",
+      "13",
+      "20",
+      "31"
+    ],
+    "Protesty a demonštrácie": [
+      "3",
+      "5",
+      "14",
+      "19",
+      "20",
+      "31"
+    ],
+    "Paragraf 363": [
+      "24",
+      "31"
+    ],
+    "Väzobné podmienky": [
+      "10",
+      "28",
+      "31"
+    ],
+    "Finančné schémy (DPH)": [
+      "30"
+    ],
+    "Diskreditácia oponentov": [
+      "31"
+    ],
+    "Reforma prokuratúry": [
+      "31"
+    ],
+    "Atmosféra na chate": [
+      "4",
+      "6",
+      "7",
+      "11",
+      "16",
+      "22",
+      "29",
+      "30",
+      "32"
+    ],
+    "Otec / Rodina": [
+      "2",
+      "10",
+      "14",
+      "20",
+      "21",
+      "22",
+      "24",
+      "27",
+      "31"
+    ],
+    "Zdravotný stav": [
+      "18",
+      "30",
+      "31"
+    ],
+    "Zuzana Plačková": [
+      "29",
+      "30"
+    ]
+  },
+  "videa": [
+    {
+      "id": "1",
+      "cas_od": "2021 07 16 18 35 39",
+      "cas_do": "2021 07 16 19 05 39",
+      "tagy": [
+        "Robert Fico",
+        "Ľudovít Makó",
+        "Dušan Kováčik",
+        "Pavol Gašpar",
+        "Tibor Gašpar",
+        "Peter Pellegrini",
+        "František Imrecze",
+        "Otec / Rodina",
+        "hlášky",
+        "Záleská",
+        "dôležité"
+      ],
+      "poznámky": [
+        {
+          "cas": "08:50",
+          "text": "Fico: mamina tej mojej priateľky mala 50tku, tak som tam išiel, čo som mal robiť?",
+          "tagy": [
+            "Robert Fico",
+            "Otec / Rodina"
+          ]
+        },
+        {
+          "cas": "08:55",
+          "text": "Tak slušne tam sedím.",
+          "tagy": [
+            "Robert Fico",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "12:40",
+          "text": "ďakujem za ten podklad na toho Maka, využil som ho maximálne",
+          "tagy": [
+            "Robert Fico",
+            "Ľudovít Makó"
+          ]
+        },
+        {
+          "cas": "14:00",
+          "text": "Fico - mne je tak ľúto toho Dušan Kováčika",
+          "tagy": [
+            "Robert Fico",
+            "Dušan Kováčik"
+          ]
+        },
+        {
+          "cas": "15:00",
+          "text": "Fico: mám materiál na Záleskú - možno ho niekedy použijem",
+          "tagy": [
+            "Robert Fico",
+            "Záleská"
+          ]
+        },
+        {
+          "cas": "16:30",
+          "text": "Gašpar: To by som mohol ináč aj ja dosvedčiť, že Makó cez neho na súde vybavoval veci a mu tam VŠETKY peniaze nosil",
+          "tagy": [
+            "Ľudovít Makó",
+            "Tibor Gašpar",
+            "Pavol Gašpar",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Pelle ma cez svojich kolegov žiada, aby som neútočil na Mikulca, a rovnako aby som nerobil kroky, ktoré by smerovali k výpovedi Imreczeho",
+          "tagy": [
+            "Robert Fico",
+            "Peter Pellegrini",
+            "František Imrecze"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "cas_od": "2021 07 16 19 05 39",
+      "cas_do": "2021 07 16 19 35 39",
+      "tagy": [
+        "Robert Fico",
+        "Pavol Gašpar",
+        "Peter Pellegrini",
+        "Protesty a demonštrácie",
+        "Kočner"
+      ],
+      "poznámky": [
+        {
+          "cas": "02:00",
+          "text": "Gašpar: Kočner je vyrušený, vyhrážal sa, že bude vypovedať (...) Fico: Treba mi povedať, nikdo nemá záujem robiť zle",
+          "tagy": [
+            "Robert Fico",
+            "Pavol Gašpar",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "12:00",
+          "text": "plány demonštrácií",
+          "tagy": [
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "17:00",
+          "text": "Fico o Pellem - ukážkový pár buzerantov!",
+          "tagy": [
+            "Robert Fico",
+            "Peter Pellegrini"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "cas_od": "2021 07 22 17 45 28",
+      "cas_do": "2021 07 22 18 15 28",
+      "tagy": [
+        "Atmosféra na chate",
+        "Miroslav Bödör (Starý)",
+        "hlášky"
+      ],
+      "poznámky": [
+        {
+          "cas": "26:00",
+          "text": "vítačky, “dáš si za štamprlík?”, sedlácke kecy, “jeden tu behal na bicygli čo má padesát IQ, sme ho počúvali”",
+          "tagy": [
+            "Atmosféra na chate",
+            "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "29:00",
+          "text": "“No toto čo urobili dnes…” - “Ja som v šoku”",
+          "tagy": [
+            "Atmosféra na chate",
+            "hlášky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "cas_od": "2021 07 22 18 15 28",
+      "cas_do": "2021 07 22 18 45 28",
+      "tagy": [
+        "Kauza Očistec",
+        "Maroš Žilinka",
+        "Ľudovít Makó",
+        "Norbert Bödör (Noro)",
+        "Médiá a tlačovky",
+        "Marek Para",
+        "Protesty a demonštrácie",
+        "Robert Fico",
+        "Pavol Gašpar",
+        "Tibor Gašpar"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Para - kto sa cíti objektívne a kto subjektívne - Kauza Gašpar (Repa, Santusová, Žilinka)",
+          "tagy": [
+            "Marek Para",
+            "Maroš Žilinka",
+            "Tibor Gašpar",
+            "Pavol Gašpar"
+          ]
+        },
+        {
+          "cas": "02:00",
+          "text": "Fico: sľúbil mi mladý Paľo, že mi niečo pošle kvôli Makóovi a neposlal mi nič",
+          "tagy": [
+            "Robert Fico",
+            "Pavol Gašpar",
+            "Ľudovít Makó"
+          ]
+        },
+        {
+          "cas": "03:00",
+          "text": "Para rieši N. Bodora",
+          "tagy": [
+            "Marek Para",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "08:00",
+          "text": "Fico Parovi - nezvažujete nejaký mediálny výstup?",
+          "tagy": [
+            "Robert Fico",
+            "Marek Para",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "15:00",
+          "text": "plánujú Parov mediálny výstup, Fico je ochotný mu pomôcť",
+          "tagy": [
+            "Marek Para",
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "17:30",
+          "text": "Para číta Žilinkov list, Fico: “Všetkým prokurátorom, to je jak na rozlúčku list.”",
+          "tagy": [
+            "Marek Para",
+            "Maroš Žilinka",
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "21:50",
+          "text": "dneska mi hovoril mladý Palo že mi dá veci na toho Maka - dojebeme ho - dvaja keď budeme jebať, bude to kolektívna jebačka",
+          "tagy": [
+            "Robert Fico",
+            "Pavol Gašpar",
+            "Ľudovít Makó"
+          ]
+        },
+        {
+          "cas": "24:00",
+          "text": "Už ma kontaktoval Uhrík, ja potrebujem hematom protest",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "cas_od": "2021 07 22 18 45 28",
+      "cas_do": "2021 07 22 19 15 28",
+      "link": "https://youtu.be/si8DfJmT_V4?si=qljfDNX3R9AQqPV2",
+      "tagy": [
+        "Kauza Kováčik",
+        "Zuzana Čaputová",
+        "Médiá a tlačovky",
+        "Robert Fico",
+        "Marek Para",
+        "Miroslav Bödör (Starý)",
+        "hlášky"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Rozčuľujú sa, že polícia “umožnila útek” Domotorovi (?), ktorý vypovedal v kauze kováčik",
+          "tagy": [
+            "Kauza Kováčik"
+          ]
+        },
+        {
+          "cas": "04:00",
+          "text": "nejaký útok na Čaputovú?",
+          "tagy": [
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "10:20",
+          "text": "Fico: Ja viem zabezpečiť médiá, ereport príde, pravda, ta3",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "10:40",
+          "text": "Fico: Po dnešnej tlačovke mám chuť zavolať Jarovi Rezníkovi, po tej tupej piči kerá tam bola.",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "13:10",
+          "text": "Fico: miera zbojníckej cti neni všade taká, aká by mala byť (aby som robil kokota?)",
+          "tagy": [
+            "Robert Fico",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "20:20",
+          "text": "Stary Bodor chvali Paru - si jeden z tych schopneich",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Marek Para",
+            "hlášky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "cas_od": "2021 07 22 19 45 28",
+      "cas_do": "2021 07 22 20 15 28",
+      "tagy": [
+        "Atmosféra na chate"
+      ],
+      "poznámky": [
+        {
+          "cas": "12:00",
+          "text": "týpek, čo tam po nich príde poupratovať, vyžiera zvyšky",
+          "tagy": [
+            "Atmosféra na chate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "cas_od": "2021 08 12 17 07 59",
+      "cas_do": "2021 08 12 17 37 59",
+      "tagy": [
+        "Atmosféra na chate",
+        "Miroslav Bödör (Starý)",
+        "Robert Kaliňák",
+        "Finančné schémy",
+        "Marek Para"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Ako otvoriť šampanské šabľou",
+          "tagy": [
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "00:05",
+          "text": "Starý Bodor každého víta: “Dáš si za štamprlík?”",
+          "tagy": [
+            "Atmosféra na chate",
+            "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "02:00",
+          "text": "o žene, ktorá mala 3 promile a nabúrala (Kaliho klientka?)",
+          "tagy": [
+            "Robert Kaliňák",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "05:00",
+          "text": "riešia peňažné schémy",
+          "tagy": [
+            "Finančné schémy"
+          ]
+        },
+        {
+          "cas": "09:00",
+          "text": "Para: ja mám videjko z tej poľovačky",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "cas_od": "2021 08 12 17 07 59",
+      "cas_do": "2021 08 12 17 37 59",
+      "tagy": [
+        "Ľudovít Makó",
+        "František Imrecze",
+        "Norbert Bödör (Noro)",
+        "Robert Kaliňák"
+      ],
+      "poznámky": [
+        {
+          "cas": "20:00",
+          "text": "kto priviedol Maka? Imrecze? Noro? Treba túto verziu rozbiť.",
+          "tagy": [
+            "Ľudovít Makó",
+            "František Imrecze",
+            "Norbert Bödör (Noro)",
+            "Robert Kaliňák"
+          ]
+        },
+        {
+          "cas": "21:20",
+          "text": "tam vtedy odchádzal ten Luterán - najlepšie by bolo že ti (kalimu) Maka poradil Lučanský, ktorý to už nepotvrdí ani nevyvráti",
+          "tagy": [
+            "Robert Kaliňák",
+            "Ľudovít Makó"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "cas_od": "2021 08 12 17 37 59",
+      "cas_do": "2021 08 12 18 07 59",
+      "tagy": [
+        "Robert Kaliňák",
+        "Tibor Gašpar",
+        "Ľudovít Makó",
+        "Zločinecká skupina",
+        "Finančné schémy"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Ako Kali nominoval Tibora",
+          "tagy": [
+            "Robert Kaliňák",
+            "Tibor Gašpar"
+          ]
+        },
+        {
+          "cas": "00:10",
+          "text": "Rozoberanie výpovedí Makóa, úplatkových káuz",
+          "tagy": [
+            "Ľudovít Makó",
+            "Finančné schémy"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Kaliňák: prečo nefungovala zločinecká skupina",
+          "tagy": [
+            "Robert Kaliňák",
+            "Zločinecká skupina"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "cas_od": "2021 08 12 18 07 59",
+      "cas_do": "2021 08 12 18 37 59",
+      "tagy": [
+        "Miroslav Bödör (Starý)",
+        "Robert Kaliňák",
+        "Tibor Gašpar",
+        "Norbert Bödör (Noro)",
+        "Kajúcnici",
+        "Ľudovít Makó",
+        "Zločinecká skupina",
+        "Maroš Žilinka",
+        "Väzobné podmienky",
+        "Otec / Rodina",
+        "hlášky",
+        "obavy",
+        "pomsta",
+        "Kočner"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Starý Bodor - toľko je tam teraz tých kokotov",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "05:00",
+          "text": "Kali: To, že by Tibor bol pri tom, ako Norovi podal prachy, to neverím, že sa stalo",
+          "tagy": [
+            "Robert Kaliňák",
+            "Tibor Gašpar",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "07:30",
+          "text": "a ešte neni koniec",
+          "tagy": [
+            "Kajúcnici",
+            "obavy"
+          ]
+        },
+        {
+          "cas": "07:50",
+          "text": "toľko je dopiči všelijakých kajúcnikov",
+          "tagy": [
+            "Kajúcnici",
+            "obavy"
+          ]
+        },
+        {
+          "cas": "12:30",
+          "text": "to Kvietik, Kollár, Kočner, Brhel, Bodor, Výboh - šak tu sú pyramídy ľudí, ktorí sú zavislí na ich tvorbe obratu a zisku... to bude taký revanš",
+          "tagy": [
+            "Norbert Bödör (Noro)",
+            "Miroslav Bödör (Starý)",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "12:35",
+          "text": "...tie rodiny nemajú príjmy, lebo nejaký kokot sa tu zabáva, vymýšľa si nejaké 150 tisícové úplatky… to bude taký revanš, nebudeme schopní tomu zabrániť ani keby sme chceli, nieže by sme chceli",
+          "tagy": [
+            "Otec / Rodina",
+            "pomsta"
+          ]
+        },
+        {
+          "cas": "12:40",
+          "text": "Prevažne Makó, zločinecká skupina",
+          "tagy": [
+            "Ľudovít Makó",
+            "Zločinecká skupina"
+          ]
+        },
+        {
+          "cas": "13:00",
+          "text": "o tri roky príde revanš",
+          "tagy": [
+            "Zločinecká skupina",
+            "pomsta"
+          ]
+        },
+        {
+          "cas": "24:00",
+          "text": "Tu neni pána, ja som myslel, že príde generálny prokurátor a povie špeciálnym prokurátorom “Kokoti vyjebaní, zastavujem vám činnosť...“",
+          "tagy": [
+            "Maroš Žilinka",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "24:05",
+          "text": "Aj Žilinka je len človek z mäsa a kostí..",
+          "tagy": [
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "26:00",
+          "text": "idem vybaviť (aby dali do väzenia?) DVDčka, playstayšníky, aby tam bolo príjemnejšie",
+          "tagy": [
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "27:30",
+          "text": "Sú pod strechou, je tam teplo, Norovi nedovolili krátke gate",
+          "tagy": [
+            "Väzobné podmienky",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "27:35",
+          "text": "...že nech mu niekdo odstrihne z teplákov",
+          "tagy": [
+            "Väzobné podmienky",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "rezne, McDonald’s vo väzení",
+          "tagy": [
+            "Väzobné podmienky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "cas_od": "2021 08 12 18 37 59",
+      "cas_do": "2021 08 12 19 07 59",
+      "tagy": [
+        "Atmosféra na chate",
+        "Robert Kaliňák",
+        "Miroslav Bödör (Starý)",
+        "Kuciak"
+      ],
+      "poznámky": [
+        {
+          "cas": "08:00",
+          "text": "Kokot Kuciak",
+          "tagy": [
+            "Atmosféra na chate",
+            "Kuciak"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "Kali odíde, ohovárajú ho",
+          "tagy": [
+            "Atmosféra na chate",
+            "Robert Kaliňák"
+          ]
+        },
+        {
+          "cas": "15:00",
+          "text": "Starý - zeber si domov!",
+          "tagy": [
+            "Atmosféra na chate",
+            "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "20:00",
+          "text": "Starý ponúka a núti ich zobrať si",
+          "tagy": [
+            "Atmosféra na chate",
+            "Miroslav Bödör (Starý)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "cas_od": "2021 08 19 17 34 08",
+      "cas_do": "2021 08 19 18 04 08",
+      "tagy": [
+        "Robert Fico",
+        "Finančné schémy",
+        "Robert Kaliňák",
+        "Daniel Lipšic",
+        "Marek Para",
+        "príhody",
+        "obavy"
+      ],
+      "poznámky": [
+        {
+          "cas": "04:00",
+          "text": "Ficova dovolenka",
+          "tagy": [
+            "Robert Fico",
+            "príhody"
+          ]
+        },
+        {
+          "cas": "06:30",
+          "text": "Fico: vykradli mi kanceláriu",
+          "tagy": [
+            "Robert Fico",
+            "Finančné schémy"
+          ]
+        },
+        {
+          "cas": "08:00",
+          "text": "komu budem vysvetľovať, že som mal 50 000 v kancelárii?",
+          "tagy": [
+            "Robert Fico",
+            "Finančné schémy"
+          ]
+        },
+        {
+          "cas": "11:00",
+          "text": "referujú o stretnutí s Kalim",
+          "tagy": [
+            "Robert Kaliňák"
+          ]
+        },
+        {
+          "cas": "14:00",
+          "text": "Para: Nechcel vyštartovať proti Ficovi…eeeh Lipšicovi",
+          "tagy": [
+            "Marek Para",
+            "Daniel Lipšic",
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "17:00",
+          "text": "Fico o súdnej kauze, kde Csaba Demeter prizná, že klamal, rozčuľuje sa a nadáva",
+          "tagy": [
+            "Robert Fico",
+            "obavy"
+          ]
+        },
+        {
+          "cas": "22:00",
+          "text": "Para Ficovi vysvetlí, že to pochopil zle",
+          "tagy": [
+            "Marek Para",
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "22:15",
+          "text": "Fico rieši Mikulca",
+          "tagy": [
+            "Robert Fico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "cas_od": "2021 08 19 18 04 09",
+      "cas_do": "2021 08 19 18 34 09",
+      "tagy": [
+        "Robert Fico",
+        "Peter Pellegrini",
+        "Médiá a tlačovky",
+        "Maroš Žilinka",
+        "Marek Para",
+        "Daniel Lipšic",
+        "Diskreditácia oponentov",
+        "pomsta"
+      ],
+      "poznámky": [
+        {
+          "cas": "03:00",
+          "text": "Fico: neviem, či ste videli tlačovku Pelleho, to je sebasústredený idiot",
+          "tagy": [
+            "Robert Fico",
+            "Peter Pellegrini",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "04:40",
+          "text": "Fico: aj v aktualitách máme človeka ktorý nám uverejní... nájdete všade novinára, ktorý vám uverejní čo chce, ale nič neni zadarmo",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "04:45",
+          "text": "Fico: ...“čo chcete za to?”, nájdete všade novinára, ktorý vám uverejní čo chce, ale nič neni zadarmo",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "11:00",
+          "text": "Fico: rád by som pomohol Žilinkovi, ale nemám ako... tá suka ani neodpovedala, tá ministerka spravodlivosti",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "11:05",
+          "text": "Fico: ...ešte by som tomu aj ublížil…tá suka ani neodpovedala, tá ministerka spravodlivosti",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "21:00",
+          "text": "Para si pýta infi na sudcu, aby naňho mohol vzniesť námietku pre zaujatosť",
+          "tagy": [
+            "Marek Para",
+            "Diskreditácia oponentov"
+          ]
+        },
+        {
+          "cas": "22:00",
+          "text": "fico: Lipšic je zlý človek",
+          "tagy": [
+            "Robert Fico",
+            "Daniel Lipšic"
+          ]
+        },
+        {
+          "cas": "24:00",
+          "link": "https://youtu.be/_5DHtY0-Z04?si=QjLsXDYVbBCdrtsp",
+          "text": "Fico: napriek tomu, že som uťahaný, ja si nechávam 10% na pomstu",
+          "tagy": [
+            "Robert Fico",
+            "pomsta"
+          ]
+        },
+        {
+          "cas": "26:30",
+          "text": "Fico: sudca sa bojí, že bude na titulke... ja vám pozriem tie vzťahy lipšica a hrubalu",
+          "tagy": [
+            "Robert Fico",
+            "Daniel Lipšic"
+          ]
+        },
+        {
+          "cas": "26:35",
+          "text": "Fico: ...tak potom kurva nech to nerobí… ja vám pozriem tie vzťahy lipšica a hrubalu",
+          "tagy": [
+            "Robert Fico",
+            "Daniel Lipšic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "cas_od": "2021 08 19 18 34 09",
+      "cas_do": "2021 08 19 19 04 09",
+      "tagy": [
+        "Robert Fico",
+        "Protesty a demonštrácie",
+        "Marek Para",
+        "Miroslav Bödör (Starý)",
+        "Dušan Kováčik",
+        "Norbert Bödör (Noro)",
+        "Otec / Rodina",
+        "Záleská",
+        "hlášky",
+        "dôležité",
+        "Kočner"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Fico - nech si navozia právnici na súd 20 ľudí, dedkov, čo tam budú ochkať, nech vytvárajú tlak na sudcu",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "13:00",
+          "text": "Fico: tá Záleská je totálna lezba",
+          "tagy": [
+            "Robert Fico",
+            "Záleská"
+          ]
+        },
+        {
+          "cas": "14:00",
+          "text": "starý o zvážaní na protesty",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "15:00",
+          "text": "Fico: bol za mnou Uhrík, povedal som mu - prídite na protest, ale nechcem tam vidieť Mazureka",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "18:00",
+          "text": "Para - o tom, že nesmie pojebať informantku (?)",
+          "tagy": [
+            "Marek Para",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "20:00",
+          "text": "Starý: Keď sa to Roba týka, ví aj rozmýšlať",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "23:00",
+          "text": "Para: Kočnerovi rodina nechcela ísť na súd",
+          "tagy": [
+            "Marek Para",
+            "Otec / Rodina",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "23:30",
+          "text": "Para o tom, že Kočner, Kováčika a Bodor sú symbolické prípady, ktoré sledujú ostatní obvinení",
+          "tagy": [
+            "Marek Para",
+            "Dušan Kováčik",
+            "Norbert Bödör (Noro)",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "23:35",
+          "text": "...a ak vyhrajú, dá im to nádej",
+          "tagy": [
+            "Marek Para",
+            "Dušan Kováčik",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "25:55",
+          "text": "Para: ...všetci začnú donášať nám, lebo už budú cítiť túto zmenu a prestane ten strach na inšpekcii",
+          "tagy": [
+            "Marek Para",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "25:57",
+          "text": "Para: Tak ako kolaborovali s nimi, všetci začnú donášať nám, lebo už budú cítiť túto zmenu...",
+          "tagy": [
+            "Marek Para"
+          ]
+        },
+        {
+          "cas": "29:00",
+          "text": "Para - SDKU v tom čase bolo oveľa sofistikovanejšie jak táto tlupa chujov",
+          "tagy": [
+            "Marek Para",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "29:05",
+          "text": "Para: ...tlupa chujov, tlupa kokotov",
+          "tagy": [
+            "Marek Para",
+            "hlášky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "cas_od": "2021 08 19 19 04 09",
+      "cas_do": "2021 08 19 19 34 09",
+      "tagy": [
+        "Norbert Bödör (Noro)",
+        "Miroslav Bödör (Starý)"
+      ],
+      "poznámky": [
+        {
+          "cas": "25:00",
+          "text": "starý o Norovej zápasníckej kariére",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Norbert Bödör (Noro)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "cas_od": "2021 08 26 17 34 29",
+      "cas_do": "2021 08 26 18 04 30",
+      "tagy": [
+        "Atmosféra na chate",
+        "Robert Kaliňák",
+        "Robert Fico",
+        "Marek Para",
+        "Kauza Dobytkár",
+        "Norbert Bödör (Noro)",
+        "Daniel Lipšic",
+        "Špeciálna prokuratúra"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Žerú, Bavia sa o Martinovi a Eugenovi Martin: Ide o Martina Kvietika, finančníka spájaného so skupinou Slavia Capital, ktorý bol v tom čase obvinený v kauze Dobytkár. Bödör v rozhovoroch opisoval vplyv Kvietika na procesy v PPA a jeho vzťahy s nominantmi v rezorte. Eugen: Ide o Eugena Čecha, bývalého vysokopostaveného úradníka na PPA, ktorý bol rovnako spomínaný v kontexte korupčnej kauzy Dobytkár. Kontext spomínania mien Miroslav Bödör na nahrávkach opisoval Robertovi Ficovi a ďalším prítomným (Marek Para, Pavol Gašpar) zákulisné informácie o tom, ako fungovali vzťahy na ministerstve pôdohospodárstva a v PPA. Debata sa točila najmä okolo: Vtedajšieho ministra pôdohospodárstva Samuela Vlčana. Vtedajšieho šéfa PPA Jozefa Kissa. Bödör na nahrávkach naznačoval, že má informácie o ich predchádzajúcej kariére a kontaktoch, pričom práve mená Martin (Kvietik) a Eugen (Čech) slúžili ako referenčné body pre opis vplyvových skupín v tomto rezorte.",
+          "tagy": [
+            "Atmosféra na chate",
+            "Kauza Dobytkár",
+            "Miroslav Bödör (Starý)",
+            "Robert Fico",
+            "Marek Para",
+            "Pavol Gašpar"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "o tom, či by Kali vypovedal na Fica",
+          "tagy": [
+            "Robert Kaliňák",
+            "Robert Fico",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "12:00",
+          "text": "Para sa pohoršuje, že ľudia na súde sa správali ako sedliaci",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "12:05",
+          "text": "...pri tom, ako sa napcháva a vyjadruje sa jak sedlák",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "15:12",
+          "text": "Para o súdnom pojednávaní: nesie sa jak hovno na lopate",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "24:00",
+          "text": "Para o kauze dobytkár, Laure Kovesi a sudcovi Hruškovi... Hruška to nebude stíhať, potom dám na Hrušku trestné oznámenie",
+          "tagy": [
+            "Marek Para",
+            "Kauza Dobytkár"
+          ]
+        },
+        {
+          "cas": "24:05",
+          "text": "Para: ...dám im preveriť všetkých tých 93 skutkov a Hruška to nebude stíhať, potom dám na Hrušku trestné oznámenie za zneužitie právomoci že rok nekonal - a Noro: všetkých odstíhame!",
+          "tagy": [
+            "Marek Para",
+            "Norbert Bödör (Noro)",
+            "Kauza Dobytkár"
+          ]
+        },
+        {
+          "cas": "25:00",
+          "text": "Budeš európsky prokurátor! - hovorím Noro: začali si s nami, rozjebeme to",
+          "tagy": [
+            "Norbert Bödör (Noro)",
+            "Marek Para"
+          ]
+        },
+        {
+          "cas": "27:30",
+          "text": "a Lipšic už vie, že špeciálna prukuratúra zanikla",
+          "tagy": [
+            "Daniel Lipšic",
+            "Špeciálna prokuratúra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "cas_od": "2021 08 26 18 04 30",
+      "cas_do": "2021 08 26 18 34 30",
+      "tagy": [
+        "Robert Fico",
+        "Miroslav Bödör (Starý)"
+      ],
+      "poznámky": [
+        {
+          "cas": "01:30",
+          "text": "podľa starého je Ficova mineka o poslancoch: Kokoti, ktorí tam len slopú a jebú",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Robert Fico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "cas_od": "2021 08 29 16 34 50",
+      "cas_do": "2021 08 29 17 04 51",
+      "tagy": [
+        "Robert Fico",
+        "Zdravotný stav"
+      ],
+      "poznámky": [
+        {
+          "cas": "28:00",
+          "text": "Fico: Ja sa neviem zbaviť toho covidu, mám srdovú arytmiu, plechovú chuť v ústach",
+          "tagy": [
+            "Robert Fico",
+            "Zdravotný stav"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "cas_od": "2021 08 29 17 04 51",
+      "cas_do": "2021 08 29 17 34 51",
+      "tagy": [
+        "Robert Fico",
+        "Protesty a demonštrácie",
+        "Maroš Žilinka",
+        "Daniel Lipšic",
+        "Pavol Gašpar",
+        "Diskreditácia oponentov",
+        "príhody",
+        "dôležité"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Príde spievať Greksa pesničky proti vláde, ten Greksa, ktorý nás nenávidel",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "09:00",
+          "text": "Fico: My sme kontaktovali Žilinku, nekomunikuje, strašne sa bojí... nech nerobíme naňho tlak",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "09:05",
+          "text": "Fico: ...popredával nejaké veci, že nech nerobíme naňho tlak",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "12:30",
+          "text": "Fico hovorí o Piťovcoch, ktorí chcú za úľavy tvrdiť, že boli v mnohých veciach ovplyvňovaní",
+          "tagy": [
+            "Robert Fico",
+            "Diskreditácia oponentov"
+          ]
+        },
+        {
+          "cas": "12:35",
+          "text": "Fico: ...“chcú sebe pomôcť a za to budú vraj niečo rozprávať”",
+          "tagy": [
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "17:00",
+          "text": "Fico: čo tie kurvy robia mojej priateľke - mala ísť na prokurátorské skúšky a na ten deň ju predvolali",
+          "tagy": [
+            "Robert Fico",
+            "príhody"
+          ]
+        },
+        {
+          "cas": "17:05",
+          "text": "Fico: ...a chcú jej otvoriť previerku",
+          "tagy": [
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "23:30",
+          "text": "Fico: nemáte pero a papier? Chcem si písať poznámky, aby som hneď zajtra vybavil",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "23:35",
+          "text": "Fico: ...mám rád, keď sú veci vybavené",
+          "tagy": [
+            "Robert Fico"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Fico si pýta fotky na Lipšica ako sa stretáva s nejakou mladou babou, podľa Gašparato bol photoshop",
+          "tagy": [
+            "Robert Fico",
+            "Daniel Lipšic",
+            "Pavol Gašpar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "link": "https://youtu.be/CNZBxZdmBZ4?si=284ElCJRumna9vWO",
+      "cas_od": "2021 08 29 17 34 51",
+      "cas_do": "2021 08 29 18 04 51",
+      "tagy": [
+        "Robert Fico",
+        "Protesty a demonštrácie",
+        "Dušan Kováčik",
+        "Norbert Bödör (Noro)",
+        "Tibor Gašpar",
+        "Kauza Bonaparte",
+        "Marek Para",
+        "Médiá a tlačovky",
+        "Miroslav Bödör (Starý)",
+        "Pavol Gašpar",
+        "Atmosféra na chate",
+        "Otec / Rodina",
+        "hlášky",
+        "Záleská",
+        "Kočner"
+      ],
+      "poznámky": [
+        {
+          "cas": "04:30",
+          "text": "Fico: položte im otázku, či chcú postaviť pred budovu súdu 50 ľudí s transparentami, ktorí budú vykrikovať, že Kováčik je nevinný (...) vyskúšajme si to kvôli Norovi aj kvôli Tiborovi",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie",
+            "Dušan Kováčik",
+            "Norbert Bödör (Noro)",
+            "Tibor Gašpar"
+          ]
+        },
+        {
+          "cas": "04:35",
+          "text": "Fico: ...veď možno zistíme, že niektoré veci fungujú",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "Fico o Bonaparte, že nevedel, kto je Bašternák, že Kočner tam naozaj nebýval",
+          "tagy": [
+            "Robert Fico",
+            "Kauza Bonaparte",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "12:30",
+          "text": "Taká pičunda, Aký je rozdiel medzi kurvou a kurvou kurevskou?",
+          "tagy": [
+            "Atmosféra na chate",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "12:40",
+          "text": "Fico: Kurva dá každému... Para: Aký je rozdiel medzi kurvou a advokátom?",
+          "tagy": [
+            "Robert Fico",
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "12:50",
+          "text": "Kurva ťa po smrti prestane vysávať.",
+          "tagy": [
+            "Atmosféra na chate",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "17:00",
+          "text": "Treba urobiť transparenty o Tódovej a Záleskej “Tódová je riaditeľka Záleskej”, narobiť fotky a jebnúť to na internet",
+          "tagy": [
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "19:00",
+          "text": "Fico Gašparovi: povedz ocinovi, že mediálne vieme pomôcť niektoré veci vylepšiť",
+          "tagy": [
+            "Robert Fico",
+            "Pavol Gašpar",
+            "Tibor Gašpar",
+            "Médiá a tlačovky",
+            "Otec / Rodina"
+          ]
+        },
+        {
+          "cas": "21:00",
+          "text": "Fico: Nepoužívajme trestné právo (v uliciach?), tam nemá čo robiť.",
+          "tagy": [
+            "Robert Fico",
+            "Protesty a demonštrácie"
+          ]
+        },
+        {
+          "cas": "22:30",
+          "text": "Para: Zleteli orly z Tatry… Starý: o trištvrte na tri, najebaní jak sa patrí!",
+          "tagy": [
+            "Marek Para",
+            "Miroslav Bödör (Starý)",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "24:30",
+          "text": "Gašpar o Ficovi: on sa bojí, že ak Kováčik padne, tak majú aj oni prúser",
+          "tagy": [
+            "Pavol Gašpar",
+            "Robert Fico",
+            "Dušan Kováčik"
+          ]
+        },
+        {
+          "cas": "26:00",
+          "text": "Para: Kováčik nepovie nič, nie je pre nich hrozba… GAŠPAR: a čo sa pýtal na tie fotky - ja ich mám!",
+          "tagy": [
+            "Marek Para",
+            "Dušan Kováčik",
+            "Pavol Gašpar"
+          ]
+        },
+        {
+          "cas": "26:10",
+          "text": "(smeje sa)",
+          "tagy": [
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Gašpar: Už aj ja mám problém komunikovať s mojím otcom, už mu to jebe.",
+          "tagy": [
+            "Pavol Gašpar",
+            "Tibor Gašpar",
+            "Otec / Rodina"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "cas_od": "2021 08 29 18 04 51",
+      "cas_do": "2021 08 29 18 34 51",
+      "tagy": [
+        "Marek Para",
+        "Kauza Očistec",
+        "Tibor Gašpar",
+        "Norbert Bödör (Noro)",
+        "Daniel Lipšic",
+        "Kauza Dobytkár",
+        "Pavol Gašpar",
+        "Otec / Rodina",
+        "Kočner",
+        "Atmosféra na chate",
+        "Vilagi",
+        "Mýtnik",
+        "korupcia"
+      ],
+      "poznámky": [
+        {
+          "cas": "03:30",
+          "text": "Para: preto oni povedali očistec jebneme... preto obetujeme Gašpara a Bodora, kurva veď už ich mal dávno natierať Kočner.",
+          "tagy": [
+            "Marek Para",
+            "Kauza Očistec",
+            "Tibor Gašpar",
+            "Norbert Bödör (Noro)",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "03:35",
+          "text": "Para: ...lebo nám to zakryje x vecí, preto obetujeme Gašpara a Bodora...",
+          "tagy": [
+            "Marek Para",
+            "Kauza Očistec",
+            "Tibor Gašpar",
+            "Norbert Bödör (Noro)"
+          ]
+        },
+        {
+          "cas": "04:00",
+          "text": "Keby Kočner začal natierať, tak GP a ŠP, Lipšic má všetko čo potrebuje",
+          "tagy": [
+            "Marek Para",
+            "Daniel Lipšic",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "04:05",
+          "text": "Para: ...tam Počiatka, tam Nora Bodora, tam Tibora Gašpara, tam Marek Para a má postarané.",
+          "tagy": [
+            "Marek Para",
+            "Norbert Bödör (Noro)",
+            "Tibor Gašpar"
+          ]
+        },
+        {
+          "cas": "04:30",
+          "text": "A nemusí stíhať tých, koho netreba stíhať.",
+          "tagy": [
+            "Marek Para"
+          ]
+        },
+        {
+          "cas": "05:30",
+          "text": "Para: staršia pani po mne pozerala - Világyho žena",
+          "tagy": [
+            "Marek Para",
+            "Vilagi"
+          ]
+        },
+        {
+          "cas": "06:10",
+          "text": "Para: do Mýtnika nie sme vtiahnutí, mýtnik je nekontrolovateľná sračka… už sa to potvrdzuje voči Sakovej - Lamač",
+          "tagy": [
+            "Marek Para",
+            "Mýtnik"
+          ]
+        },
+        {
+          "cas": "07:10",
+          "text": "poďme rozjebať dobytok, poďme rozjebať očistec",
+          "tagy": [
+            "Marek Para",
+            "Kauza Dobytkár",
+            "Kauza Očistec"
+          ]
+        },
+        {
+          "cas": "07:30",
+          "text": "Para: (nie je jasné o kom) za 5000 eur má sklony plniť želania",
+          "tagy": [
+            "Marek Para",
+            "korupcia"
+          ]
+        },
+        {
+          "cas": "08:30",
+          "text": "Para: oni sú závislí priamo od tvojho otca",
+          "tagy": [
+            "Marek Para",
+            "Pavol Gašpar",
+            "Tibor Gašpar",
+            "Otec / Rodina"
+          ]
+        },
+        {
+          "cas": "09:20",
+          "text": "Para: Iveta puká pri jebačke",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "17:00",
+          "text": "Para: Chceme takého ako ste vy, ale nie v úvodzovkách postihnutého Kočnera",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate",
+            "Kočner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "cas_od": "2021 09 02 17 22 13",
+      "cas_do": "2021 09 02 17 52 13",
+      "tagy": [
+        "Atmosféra na chate",
+        "Maroš Žilinka",
+        "Pavol Gašpar",
+        "Miroslav Bödör (Starý)",
+        "Špeciálna prokuratúra",
+        "Robert Fico",
+        "Vladimír Pčolinský",
+        "Daniel Lipšic",
+        "Generálna prokuratúra",
+        "Otec / Rodina",
+        "obavy",
+        "hlášky",
+        "Tibor Gašpar"
+      ],
+      "poznámky": [
+        {
+          "cas": "06:00",
+          "text": "poskok spomína, že videl nejakého Ukrajinca na fotopasci - GAŠPAR: šak si mal strieľať hneď, do kolena",
+          "tagy": [
+            "Pavol Gašpar",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "08:00",
+          "text": "starý číta: so Žilinkom prichádza zákon, ja som to napísal!",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "08:15",
+          "text": "Gašpar popritom: na tom pozemku, čo Otec má dom, je všetko vinič",
+          "tagy": [
+            "Pavol Gašpar",
+            "Otec / Rodina",
+            "Tibor Gašpar"
+          ]
+        },
+        {
+          "cas": "09:30",
+          "text": "Starý číta o Žilinkovi, Gašpar (nepočúva ho): vyprávam jej... a zrazu ju vyplo, malú, som si ju odfotil",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Maroš Žilinka",
+            "Pavol Gašpar",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "11:30",
+          "text": "Tak ma sere toto prostredie do piči - fakt nevieme kde je spravodlivosť…",
+          "tagy": [
+            "Atmosféra na chate",
+            "obavy"
+          ]
+        },
+        {
+          "cas": "13:40",
+          "text": "Ten kokot na najvyššom súde nech si prečíta celý spis",
+          "tagy": [
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "17:30",
+          "text": "Fico: Špeciálna prokuratúra si dala urobiť analýzu … a vysvetľujú, že Žilinka je úplný kokot",
+          "tagy": [
+            "Robert Fico",
+            "Špeciálna prokuratúra",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "17:35",
+          "text": "Fico: ...aby som to takto po slovensky povedal.",
+          "tagy": [
+            "Robert Fico",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "18:50",
+          "text": "...my máme právo tvrdiť, že to bola čistá politická objednávka na likvidáciu Pčolinského … Lipšic je gauner",
+          "tagy": [
+            "Robert Fico",
+            "Vladimír Pčolinský",
+            "Daniel Lipšic"
+          ]
+        },
+        {
+          "cas": "18:55",
+          "text": "Fico: ...ak povie generálna prokuratúra, že tam bolo toľko a toľko porušení zákona... podľa mňa výborne nám nahral",
+          "tagy": [
+            "Robert Fico",
+            "Generálna prokuratúra"
+          ]
+        },
+        {
+          "cas": "20:20",
+          "text": "ale čo sa mi páči, tak ten Žilinka je na hrane, čo je dobre, tam už cesta naspäť neexistuje",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "20:40",
+          "text": "Fico: Chlapi, domáce úlohy (rozdáva papiere).",
+          "tagy": [
+            "Robert Fico",
+            "Atmosféra na chate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "cas_od": "2021 09 02 17 52 13",
+      "cas_do": "2021 09 02 18 22 13",
+      "tagy": [
+        "Kajúcnici",
+        "Miroslav Bödör (Starý)",
+        "Robert Fico",
+        "Lučanský"
+      ],
+      "poznámky": [
+        {
+          "cas": "16:00",
+          "text": "na dývajú na kajúcnikov - STARÝ: nikdo nedrží basu!",
+          "tagy": [
+            "Kajúcnici",
+            "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "18:30",
+          "text": "Fico: ľudia veľmi dobre reagujú na toho Lučanského",
+          "tagy": [
+            "Robert Fico",
+            "Lučanský"
+          ]
+        },
+        {
+          "cas": "24:50",
+          "text": "nadávajú na kajúcnikov, čo kde kto hovorí Fico: dobre chlapi, ideme bojovať",
+          "tagy": [
+            "Kajúcnici",
+            "Robert Fico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "cas_od": "2021 09 02 18 22 13",
+      "cas_do": "2021 09 02 18 52 13",
+      "tagy": [
+        "Robert Fico",
+        "Peter Pellegrini",
+        "František Imrecze",
+        "Miroslav Bödör (Starý)",
+        "Paragraf 363",
+        "Daniel Lipšic",
+        "Pavol Gašpar",
+        "Tibor Gašpar",
+        "Zuzana Čaputová",
+        "Otec / Rodina",
+        "hlášky",
+        "mafia",
+        "dôležité"
+      ],
+      "poznámky": [
+        {
+          "cas": "02:00",
+          "text": "Ja teraz štartujem Peleho, šak poďme do toho Mikulca spolu, len jemu zase lepí, lebo sa dozvedel, že Imrecze naňho narozprával",
+          "tagy": [
+            "Robert Fico",
+            "Peter Pellegrini",
+            "František Imrecze"
+          ]
+        },
+        {
+          "cas": "02:30",
+          "text": "Fico: je tam na ozdobu celá Saková … bola predstava, že čistá žena sympatická - Starý: Piča je to sprostá vyjebaná…",
+          "tagy": [
+            "Robert Fico",
+            "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "03:40",
+          "text": "363, Lipšic, anekdota o hráčovi... vlastne povedali generálnej prokuratúre, že sú jebnutí",
+          "tagy": [
+            "Paragraf 363",
+            "Daniel Lipšic"
+          ]
+        },
+        {
+          "cas": "03:45",
+          "text": "...anekdota o hráčovi, ktoý nadáva na trénera - vlastne povedali generálnej prokuratúre, že sú jebnutí",
+          "tagy": [
+            "Paragraf 363",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "Fico o Kollároví - myslel som, že bude mať aspoň mafiánsku česť",
+          "tagy": [
+            "Robert Fico",
+            "mafia"
+          ]
+        },
+        {
+          "cas": "13:20",
+          "text": "Fico: vy čo mi napíšete, to poviem…to ja potrebujem vysvetliť - vyslovene si od nich pýta noty!!!",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "13:25",
+          "text": "Fico: ...vyslovene si od nich pýta noty!!!",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "14:20",
+          "text": "Gašparovi volá ocko",
+          "tagy": [
+            "Pavol Gašpar",
+            "Tibor Gašpar",
+            "Otec / Rodina"
+          ]
+        },
+        {
+          "cas": "22:00",
+          "text": "Starý sa vyhráža, že pôjde za prezidentkou, nech ich spustí, inak skládka a VŠETKY citlivé kauzy",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "22:05",
+          "text": "Starý sa vyhráža... nech ich pustí, inak skládka a VŠETKY citlivé kauzy",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Zuzana Čaputová"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "cas_od": "2021 09 09 17 41 11",
+      "cas_do": "2021 09 09 18 11 11",
+      "tagy": [
+        "Robert Fico",
+        "príhody"
+      ],
+      "poznámky": [
+        {
+          "cas": "20:00",
+          "text": "Fico: udem si robiť narodeniny tuto v Tajnej to je jak vo Francúzsku",
+          "tagy": [
+            "Robert Fico",
+            "príhody"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "cas_od": "2021 09 09 18 11 11",
+      "cas_do": "2021 09 09 18 41 11",
+      "tagy": [
+        "Ján Čurilla",
+        "Inšpekcia (ÚIS)",
+        "Robert Fico",
+        "Marek Para",
+        "Kauza Očistec",
+        "Maroš Žilinka",
+        "Atmosféra na chate",
+        "Pavol Gašpar",
+        "Miroslav Bödör (Starý)",
+        "Ľudovít Makó",
+        "Robert Kaliňák",
+        "Kočner",
+        "dôležité",
+        "hlášky"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Fico - je pravda, že chystajú toho Čurillu urobiť?",
+          "tagy": [
+            "Robert Fico",
+            "Ján Čurilla"
+          ]
+        },
+        {
+          "cas": "00:10",
+          "text": "Para zhŕňa, čo sa chystá urobiť inšpekcia, kto prečo ako vypovedal",
+          "tagy": [
+            "Marek Para",
+            "Inšpekcia (ÚIS)"
+          ]
+        },
+        {
+          "cas": "06:30",
+          "text": "Fico: toto všetko nám vyhovuje tá špina tam, to sa týka všetkých v Očistci",
+          "tagy": [
+            "Robert Fico",
+            "Kauza Očistec"
+          ]
+        },
+        {
+          "cas": "08:30",
+          "text": "Fico: my sa pokúšasme posielať Žilinkovi takie, povedzme podporné stanoviská",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "08:35",
+          "text": "Fico: ...on vie, že sme pripravení urobiť aj nejaké tlačovky",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "Gašpar nalieva Ficovi: stačí, stačí!",
+          "tagy": [
+            "Pavol Gašpar",
+            "Robert Fico",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "12:00",
+          "text": "Fico: ...ja som prakticky nemal ani motorovú možnosť nepodpisovať tie veci, hlavne ste súčasťou nejakých games…",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "12:05",
+          "text": "Fico: Napriek tomu, že tá snaha je obrovská, ja som stále niekde ďaleko, že ja sa nikde neobjavujem ani nič… aby som aj úprimne povedal, veď sme veľa vecí vedeli aj sa veľa vecí rozprávalo... ten (nezrozumiteľné) by mohol niečo vystrieľať, aké obrovské stádo",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "12:20",
+          "text": "PARA: že sa strašne zabávate na tom, že to je popiči očista, keď stíhajú iných",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "14:00",
+          "text": "Fico: Jarko čižnár sa nám nadrbal, išiel na súd…",
+          "tagy": [
+            "Robert Fico",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "19:00",
+          "text": "bavia sa o Kočnerovi a Ruskovi, Fico ľutuje Ruska",
+          "tagy": [
+            "Robert Fico",
+            "Atmosféra na chate",
+            "Kočner"
+          ]
+        },
+        {
+          "cas": "25:10",
+          "text": "Starý Ficovi: Sem tam spomeň toho Maka, že je to najväčší milionár a behá po slobode",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Robert Fico",
+            "Ľudovít Makó"
+          ]
+        },
+        {
+          "cas": "25:30",
+          "text": "Fico: teraz je dôležité, aby sa rozpadol tím očistec … o Hamranovi",
+          "tagy": [
+            "Robert Fico",
+            "Kauza Očistec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "cas_od": "2021 09 09 18 41 11",
+      "cas_do": "2021 09 09 19 11 11",
+      "tagy": [
+        "Robert Fico",
+        "Miroslav Bödör (Starý)",
+        "Peter Pellegrini",
+        "Pavol Gašpar",
+        "Ján Čurilla",
+        "Otec / Rodina",
+        "dôležité",
+        "hlášky",
+        "obavy",
+        "Tibor Gašpar"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Fico: VŠETKY podklady v prípade Santusová vám pošlem",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "03:00",
+          "text": "to je najpodstatnejšie, treba ich dostať von čo najrýchlejšie",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "05:30",
+          "text": "Starý: kde je toľko zloby?",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "hlášky",
+            "obavy"
+          ]
+        },
+        {
+          "cas": "13:20",
+          "text": "Fico: Pelle chodí po parlamente a kričí že strana hlas, jaká strana hlas?",
+          "tagy": [
+            "Robert Fico",
+            "Peter Pellegrini"
+          ]
+        },
+        {
+          "cas": "18:00",
+          "text": "GAŠPAR: Volám otcovi, hovorím mu rozmýšľam, čo dám Čurillovi a Ďurkovi na pohladnicu do basy",
+          "tagy": [
+            "Pavol Gašpar",
+            "Ján Čurilla",
+            "Otec / Rodina",
+            "Tibor Gašpar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "cas_od": "2021 09 09 19 11 11",
+      "cas_do": "2021 09 09 19 41 12",
+      "tagy": [
+        "Miroslav Bödör (Starý)",
+        "Väzobné podmienky",
+        "Norbert Bödör (Noro)"
+      ],
+      "poznámky": [
+        {
+          "cas": "04:30",
+          "text": "Starý: všetci tí kokoti riaditeľ bacharov… by mu mali mazať klučky, vytírat riť, ja to nechápem",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Väzobné podmienky",
+            "Norbert Bödör (Noro)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "cas_od": "2021 09 27 17 09 12",
+      "cas_do": "2021 09 27 17 39 12",
+      "tagy": [
+        "Pavol Gašpar",
+        "Atmosféra na chate",
+        "Marek Para",
+        "Zuzana Plačková",
+        "hlášky"
+      ],
+      "poznámky": [
+        {
+          "cas": "17:00",
+          "text": "Gašpar chystá",
+          "tagy": [
+            "Pavol Gašpar",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "27:25",
+          "text": "Mladý Gašpar: Nemám oné komín tak som si dal UAE, že to je z vodnej pary že to len vyzerá takto jak oheň.",
+          "tagy": [
+            "Pavol Gašpar",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Dopiči Marek, my ti nie sme prednejší jak nejaká Plačková? … Vieš prečo začínal ako drogový advokát?",
+          "tagy": [
+            "Pavol Gašpar",
+            "Marek Para",
+            "Zuzana Plačková",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "28:15",
+          "text": "Lebo keď zastupuješ dílerov, díleri majú strašné prachy vždy.",
+          "tagy": [
+            "Marek Para",
+            "hlášky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "cas_od": "2021 09 27 17 39 12",
+      "cas_do": "2021 09 27 18 09 12",
+      "tagy": [
+        "Ľudovít Makó",
+        "Pavol Gašpar",
+        "Miroslav Bödör (Starý)",
+        "Marek Para",
+        "Zuzana Plačková",
+        "Robert Fico",
+        "Atmosféra na chate",
+        "Zuzana Čaputová",
+        "Ján Čurilla",
+        "Dušan Kováčik",
+        "Finančné schémy (DPH)",
+        "Zdravotný stav",
+        "hlášky",
+        "dôležité",
+        "Vilagi",
+        "čakanie"
+      ],
+      "poznámky": [
+        {
+          "cas": "01:00",
+          "text": "ty kokot, Mako je vážny kokot",
+          "tagy": [
+            "Ľudovít Makó",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "02:00",
+          "text": "Gašpar číta články",
+          "tagy": [
+            "Pavol Gašpar"
+          ]
+        },
+        {
+          "cas": "07:00",
+          "text": "Povíme že Marek čakal, že musel odísť",
+          "tagy": [
+            "Marek Para",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "07:20",
+          "text": "starý: Kokot vyjebaný Makó! NA VŠETKO SI SPOMENUL!",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Ľudovít Makó",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "stále čakajú na Fica",
+          "tagy": [
+            "Robert Fico",
+            "Atmosféra na chate",
+            "čakanie"
+          ]
+        },
+        {
+          "cas": "12:40",
+          "text": "Starý: Marek, ozvi sa ty kurva vychcaná. Zapredal si nás Plačkovej.",
+          "tagy": [
+            "Miroslav Bödör (Starý)",
+            "Marek Para",
+            "Zuzana Plačková",
+            "Atmosféra na chate"
+          ]
+        },
+        {
+          "cas": "15:00",
+          "text": "rozhovor o saunách",
+          "tagy": [
+            "Atmosféra na chate",
+            "hlášky"
+          ]
+        },
+        {
+          "cas": "17:40",
+          "text": "príde Fico, zaujíma sa o zastupovanie Plačkovej Parom, “že dáky pervitín”",
+          "tagy": [
+            "Robert Fico",
+            "Marek Para",
+            "Zuzana Plačková"
+          ]
+        },
+        {
+          "cas": "18:30",
+          "text": "Fico: ja sa normáne neviem dostať z toho covidu",
+          "tagy": [
+            "Robert Fico",
+            "Zdravotný stav"
+          ]
+        },
+        {
+          "cas": "19:30",
+          "text": "Fico o stretnutí s prezidentkou - presviedča ju o svojej verzii o Čurilovcoch... skončíte horšie ako Kiska",
+          "tagy": [
+            "Robert Fico",
+            "Zuzana Čaputová",
+            "Ján Čurilla"
+          ]
+        },
+        {
+          "cas": "19:35",
+          "text": "Fico o stretnutí s prezidentkou: ...keď nebudete do toho vstupovať pani prezidentka, tak všetci budú tvrdiť, že ste pri tom… a vás to aj prevalcuje… skončíte horšie ako Kiska, máte jedinú výhodu, že ste žena",
+          "tagy": [
+            "Robert Fico",
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "21:20",
+          "text": "Fico: ma žiadala, že aby som zastavil Ľuboša Blahu... ste jak tí španielski kolonizátori",
+          "tagy": [
+            "Robert Fico",
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "21:25",
+          "text": "Fico a Starý: ...starý sa rozhorčuje: šak on je normálny človek… Fico: pani prezidentka, ste jak tí španielski kolonizátori, najskôr vyvraždili všetkých indiánov a potom hovorili pokoj a kľud",
+          "tagy": [
+            "Robert Fico",
+            "Miroslav Bödör (Starý)",
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "22:30",
+          "text": "Fico: ona je nána, ktorú niekto šoféruje",
+          "tagy": [
+            "Robert Fico",
+            "Zuzana Čaputová"
+          ]
+        },
+        {
+          "cas": "28:00",
+          "text": "Fico loboval u Világyho: šak ste kamaráti, to tak necháte?",
+          "tagy": [
+            "Robert Fico",
+            "dôležité",
+            "Vilagi"
+          ]
+        },
+        {
+          "cas": "28:30",
+          "text": "A Világy hovorí že čo má tá sudkyňa robiť?",
+          "tagy": [
+            "Robert Fico",
+            "Vilagi"
+          ]
+        },
+        {
+          "cas": "29:00",
+          "text": "Fico: oni ho obetovali... Dušan bol pre nich menej nebezpečný ako Makó... normálne toho Dušana hodili cez palubu",
+          "tagy": [
+            "Robert Fico",
+            "Dušan Kováčik",
+            "Ľudovít Makó"
+          ]
+        },
+        {
+          "cas": "29:05",
+          "text": "Fico a Gašpar: ...oni ho obetovali, toho (?), Makó vedel na nich DPHáčku - Gašpar: oni sa rozhodovali medzi Dušanom a Makóm - Fico: Dušan bol pre nich menej nebezpečný ako Makó - Gašpar: Dušan bol pre nich menej peňazí do budúcna ako Makó… Fico: normálne toho Dušana hodili cez palubu a teraz mi zase vyvolávajú… (v ďalšej časti)",
+          "tagy": [
+            "Robert Fico",
+            "Pavol Gašpar",
+            "Dušan Kováčik",
+            "Ľudovít Makó",
+            "Finančné schémy (DPH)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "cas_od": "2021 09 27 18 09 12",
+      "cas_do": "2021 09 27 18 39 12",
+      "tagy": [
+        "Robert Fico",
+        "Dušan Kováčik",
+        "Pavol Gašpar",
+        "Tibor Gašpar",
+        "Maroš Žilinka",
+        "Paragraf 363",
+        "Špeciálna prokuratúra",
+        "Vladimír Pčolinský",
+        "Ján Čurilla",
+        "Väzobné podmienky",
+        "Zuzana Čaputová",
+        "Kauza Očistec",
+        "Médiá a tlačovky",
+        "Ľudovít Makó",
+        "Norbert Bödör (Noro)",
+        "Diskreditácia oponentov",
+        "Reforma prokuratúry",
+        "Otec / Rodina",
+        "Zdravotný stav",
+        "dôležité"
+      ],
+      "poznámky": [
+        {
+          "cas": "00:00",
+          "text": "Fico: … že majú pre mňa nejaké info od manželky Dušana … Ja pôjdem niekam ku (?) alebo Világymu a ma tam budú nahrávať?",
+          "tagy": [
+            "Robert Fico",
+            "Dušan Kováčik"
+          ]
+        },
+        {
+          "cas": "00:15",
+          "text": "Ja som si dával pozor.",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "00:25",
+          "text": "Gašpar - ja som sa pýtal, že Dušan je v pohode po psychickej stránke, že on to očakával…",
+          "tagy": [
+            "Pavol Gašpar",
+            "Dušan Kováčik"
+          ]
+        },
+        {
+          "cas": "03:30",
+          "text": "Gašpar o vývoji otcovho prípadu",
+          "tagy": [
+            "Pavol Gašpar",
+            "Tibor Gašpar",
+            "Otec / Rodina",
+            "Kauza Očistec"
+          ]
+        },
+        {
+          "cas": "05:20",
+          "text": "fico: Len aby to nebolo tak, že popúšťajú nejaké menšie veci... a týchto našich, na ktorých nám najviac záleží tam ponechávajú",
+          "tagy": [
+            "Robert Fico",
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "05:25",
+          "text": "Fico: ...že tam urobia nejakú úlavu a týchto našich, na ktorých nám najviac záleží tam ponechávajú aby tam zostali visieť",
+          "tagy": [
+            "Robert Fico",
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "10:00",
+          "text": "Fico: Žilinka komunikuje veľmi málo… nechal odkaz... že sa nemusíme báť prijatia týchto zmien, pokiaľ ide o 363...",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka",
+            "Paragraf 363"
+          ]
+        },
+        {
+          "cas": "10:05",
+          "text": "Fico: ...chodí k známemu na východ na poľovačky…a naši poslanci z východného slovenska mi to hovorili “Róbert, bol Žilinka na východe a nechal odkaz cez toho podnikateľa, že sa nemusíme báť prijatia týchto zmien, pokiaľ ide o 363, rozdelenie GP a špeciálnej prokuratúry, lebo že na to nebudú mať čas.”",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka",
+            "Paragraf 363",
+            "Reforma prokuratúry",
+            "Špeciálna prokuratúra"
+          ]
+        },
+        {
+          "cas": "11:00",
+          "text": "Toto hovoril generálny prokurátor, akokeby naznačoval, že (gesto)",
+          "tagy": [
+            "Robert Fico",
+            "Maroš Žilinka"
+          ]
+        },
+        {
+          "cas": "12:00",
+          "text": "Fico o tom, že Kolíková chce oznámiť zmeny 363 a treba to odďaľovať a robiť obštrukcie",
+          "tagy": [
+            "Robert Fico",
+            "Paragraf 363"
+          ]
+        },
+        {
+          "cas": "12:44",
+          "text": "Fico: VŠETKY zdroje, ktoré mám, mi hovoria - ideme ďalej, dotýka sa to niektorých prokurátorov ŠP",
+          "tagy": [
+            "Robert Fico",
+            "Špeciálna prokuratúra"
+          ]
+        },
+        {
+          "cas": "12:46",
+          "text": "Fico: ...ideme ďalej, dotýka sa to ďalších, dotýka sa to niektorých prokurátorov ŠP",
+          "tagy": [
+            "Robert Fico",
+            "Špeciálna prokuratúra"
+          ]
+        },
+        {
+          "cas": "13:00",
+          "text": "Gašpar: Pčolinský nemá jasný cieľ, počul som, že ide po Kyseľovi - Fico: ale to je pomsta tam",
+          "tagy": [
+            "Pavol Gašpar",
+            "Vladimír Pčolinský"
+          ]
+        },
+        {
+          "cas": "14:00",
+          "text": "Fico o tom, že povedal Pčolinskému, že bude hovoriť o Kollárových transexuálnych kontaktoch... pčolinský v diskusii veľmi pomohol",
+          "tagy": [
+            "Robert Fico",
+            "Vladimír Pčolinský",
+            "Diskreditácia oponentov"
+          ]
+        },
+        {
+          "cas": "14:05",
+          "text": "Fico: ...že bude v diskusnej relácii hovoriť o Kollárových transexuálnych kontaktoch a že si vymyslel, že vie detaily - a potom mu vraj Pčolinský v diskusii “veľmi pomohol”",
+          "tagy": [
+            "Robert Fico",
+            "Vladimír Pčolinský",
+            "Médiá a tlačovky",
+            "Diskreditácia oponentov"
+          ]
+        },
+        {
+          "cas": "19:20",
+          "text": "Fico: Nám by veľmi pomohlo keby ešte jeden prípad rozsahu toho Čurillu vyšiel na povrch... jediné solídne riešenie je pustiť všetkých z väzby von",
+          "tagy": [
+            "Robert Fico",
+            "Ján Čurilla",
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "19:25",
+          "text": "Fico: ...pretože potom by môžeme začať hovoriť: “jediné solídne riešenie je pustiť všetkých z väzby von, pustite pre mňa za mňa aj Čurillu von, ale pustite ich von”",
+          "tagy": [
+            "Robert Fico",
+            "Ján Čurilla",
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "20:00",
+          "text": "Fico: Ja som všeličo očakával v živote ale tieto kurvy… a vidíte ich jak bojujú",
+          "tagy": [
+            "Robert Fico",
+            "dôležité"
+          ]
+        },
+        {
+          "cas": "20:30",
+          "text": "Gašpar že už by ich mohli pustiť - Fico: jak sa nadrbeme všetci",
+          "tagy": [
+            "Pavol Gašpar",
+            "Robert Fico",
+            "Väzobné podmienky"
+          ]
+        },
+        {
+          "cas": "21:00",
+          "text": "Fico o prezidentke a 363: je to nána, ktorá je manipulovateľná",
+          "tagy": [
+            "Robert Fico",
+            "Zuzana Čaputová",
+            "Paragraf 363"
+          ]
+        },
+        {
+          "cas": "23:20",
+          "text": "Gašpar: očistec je rozpadnutá kauza",
+          "tagy": [
+            "Pavol Gašpar",
+            "Kauza Očistec"
+          ]
+        },
+        {
+          "cas": "27:50",
+          "text": "Fico: ja idem do NTCčka zvolať štyritisíc ľudí, to bude akože úcta k starším",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "28:30",
+          "text": "fico o vstupoch v českej Prime aj o tom, ako chce varovať čechov",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "28:35",
+          "text": "Fico: ...ako chce varovať čechov, aby si toto nezvolili, “hoci by som nemal do volieb vstupovať”",
+          "tagy": [
+            "Robert Fico",
+            "Médiá a tlačovky"
+          ]
+        },
+        {
+          "cas": "29:00",
+          "text": "naštve ich, že Makó vyhral zákazku pre poštu",
+          "tagy": [
+            "Ľudovít Makó"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "cas_od": "2021 09 27 18 39 12",
+      "cas_do": "2021 09 27 19 09 12",
+      "tagy": [
+        "Pavol Gašpar",
+        "Vladimír Pčolinský",
+        "Miroslav Bödör (Starý)",
+        "Robert Fico",
+        "Atmosféra na chate"
+      ],
+      "poznámky": [
+        {
+          "cas": "04:00",
+          "text": "Gašpar: ten Pčolinský to musel zberať najskôr aby mohol vydierať",
+          "tagy": [
+            "Pavol Gašpar",
+            "Vladimír Pčolinský"
+          ]
+        },
+        {
+          "cas": "08:20",
+          "text": "Gašpar starému o ficovi: keby nalievaš tak aj sedí ešte",
+          "tagy": [
+            "Pavol Gašpar",
+            "Miroslav Bödör (Starý)",
+            "Robert Fico",
+            "Atmosféra na chate"
+          ]
+        }
+      ]
+    }
+  ]
+}

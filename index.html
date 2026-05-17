@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ČIFÁRE - Databázový Prieskumník</title>
+    <style>
+        :root {
+            --bg-main: #1a1a1a;
+            --bg-card: #2b2b2b;
+            --bg-sidebar: #222222;
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --accent: #1f6aa5;
+            --accent-hover: #144d78;
+            --border-color: #3e3e3e;
+            --input-bg: #1e1e1e;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Hlavná hlavička (Title Frame) */
+        header {
+            background-color: var(--bg-sidebar);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .title-section h1 {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: var(--text-primary);
+        }
+
+        .controls-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .zoom-buttons {
+            display: flex;
+            gap: 6px;
+        }
+
+        .btn-zoom {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .btn-zoom:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .switch-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            user-select: none;
+        }
+
+        .switch-container input {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            background: rgba(255,255,255,0.03);
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .interval-text {
+            font-weight: bold;
+            min-width: 110px;
+        }
+
+        .slider-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .slider-group label {
+            font-size: 9px;
+            color: var(--text-secondary);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .slider-group input {
+            width: 90px;
+            cursor: pointer;
+        }
+
+        /* Hlavný kontajner */
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Bočný panel (Control Frame) */
+        aside {
+            width: 320px;
+            background-color: var(--bg-sidebar);
+            padding: 20px;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            overflow-y: auto;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group label {
+            font-size: 11px;
+            font-weight: bold;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        select, input[type="text"], input[type="number"], input[type="file"] {
+            background-color: var(--input-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            width: 100%;
+            transition: border-color 0.2s;
+        }
+
+        select:focus, input:focus {
+            border-color: var(--accent);
+        }
+
+        input[type="file"] {
+            padding: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 10px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+            color: var(--text-primary);
+            letter-spacing: 0.8px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 9px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: #3a3a3a;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #4a4a4a;
+        }
+
+        .file-actions {
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Zobrazovací panel (Content Frame) */
+        main {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: var(--bg-main);
+        }
+
+        .video-box {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .video-header {
+            font-weight: bold;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .video-link {
+            color: #1e90ff;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .video-link:hover {
+            color: #63b8ff;
+        }
+
+        .video-themes {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+            font-weight: normal;
+        }
+
+        .notes-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .note-item {
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .note-tags {
+            display: block;
+            font-size: 12px;
+            color: #888888;
+            margin-left: 18px;
+            margin-top: 2px;
+            font-style: italic;
+        }
+       
+        @media screen and (max-width: 768px) {
+            
+            /* 1. Globálne nastavenia a reset okrajov */
+            body {
+                padding: 10px;
+                font-size: 14px; /* Mierne zmenšenie základného textu */
+            }
+
+            /* 2. Zmena rozloženia (Layout) - Prvky idú pod seba namiesto vedľa seba */
+            .kontajner, 
+            .flex-sekcia, 
+            .riadok {
+                display: block !important; /* zruší flex/grid vedľa seba */
+                width: 100% !important;
+            }
+
+            /* 3. Stĺpce a Sidebar sa roztiahnu na celú šírku */
+            .stlpec, 
+            .sidebar, 
+            .hlavny-obsah {
+                width: 100% !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 15px; /* Medzera medzi prvkami pod sebou */
+            }
+
+            /* 4. Prvky pre dotyk (UX štandardy pre prsty) */
+            button, 
+            .tlacidlo, 
+            input[type="text"], 
+            input[type="file"], 
+            select {
+                width: 100% !important;     /* Tlačidlá a inputy budú na celú šírku */
+                min-height: 44px;           /* Minimálna výška pre pohodlné kliknutie prstom */
+                margin-bottom: 12px;
+                font-size: 16px !important; /* Dôležité: iOS automaticky približuje (zoomuje) inputy, ak majú menej ako 16px */
+                box-sizing: border-box;
+            }
+
+            /* 5. Responzívne nadpisy (zmenšenie písma) */
+            h1 { font-size: 22px !important; }
+            h2 { font-size: 18px !important; }
+            h3 { font-size: 16px !important; }
+
+            /* 6. Ochrana proti pretekaniu širokých tabuliek alebo veľkých elementov */
+            .tabulka-kontajner, 
+            .skrolovaci-box {
+                width: 100%;
+                overflow-x: auto; /* Ak je tabuľka príliš široká, dá sa v nej posúvať prstom doprava/doľava */
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* 7. Pomocná trieda pre skrytie vecí, ktoré na mobile netreba */
+            .skryt-na-mobile {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title-section">
+            <h1 id="mainTitle">ČIFÁRE</h1>
+        </div>
+        <div class="controls-section">
+            <!-- Filter podľa počtu tagov (Interval) -->
+            <div class="slider-container">
+                <span id="intervalLabel" class="interval-text">Interval: 0 - 10</span>
+                <div class="slider-group">
+                    <label>Min</label>
+                    <input type="range" id="sliderMin" min="0" max="10" value="0" oninput="updateMin(this.value)">
+                </div>
+                <div class="slider-group">
+                    <label>Max</label>
+                    <input type="range" id="sliderMax" min="0" max="10" value="10" oninput="updateMax(this.value)">
+                </div>
+            </div>
+
+            <!-- Prepínače (Switches) -->
+            <label class="switch-container">
+                <input type="checkbox" id="wholeVideoSwitch" onchange="toggleWholeVideo(this.checked)"> Celé videá
+            </label>
+            <label class="switch-container">
+                <input type="checkbox" id="showTagsSwitch" onchange="toggleShowTags(this.checked)"> Tagy
+            </label>
+
+            <!-- Zoom textu -->
+            <div class="zoom-buttons">
+                <button class="btn-zoom" onclick="zoomOut()" title="Zmenšiť text">-</button>
+                <button class="btn-zoom" onclick="zoomIn()" title="Zväčšiť text">+</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Bočný ovládací panel -->
+        <aside>
+            <div class="form-group">
+                <label>Okruhy</label>
+                <select id="categorySelect" onchange="selectCategory(this.value)"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Témy</label>
+                <select id="tagsSelect" onchange="selectTag(this.value)"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Videá</label>
+                <select id="videoSelect" onchange="selectVideo(this.value)"></select>
+            </div>
+
+            <div class="section-title">AKTUALIZOVAŤ</div>
+
+            <div class="form-group">
+                <label>Video (ID)</label>
+                <input type="text" id="videoEntry">
+            </div>
+
+            <div class="form-group">
+                <label>Poznámka</label>
+                <input type="text" id="noteEntry">
+            </div>
+
+            <div class="form-group">
+                <label>Čas</label>
+                <input type="text" id="timeEntry" placeholder="napr. 04:15">
+            </div>
+
+            <div class="form-group">
+                <label>Téma (Nový tag)</label>
+                <input type="text" id="newTagEntry">
+            </div>
+
+            <div class="form-group">
+                <label>Okruh</label>
+                <select id="tagCategorySelect"></select>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="clearEntries()">VYČISTIŤ</button>
+                <button class="btn btn-primary" onclick="updateEntry()">PRIDAŤ</button>
+            </div>
+
+            <!-- Správa dátových súborov -->
+            <div class="file-actions">
+                <div class="form-group">
+                    <label>Načítať súbor hlavna_db.json</label>
+                    <input type="file" id="jsonFileInput" accept=".json" onchange="loadJsonFile(event)">
+                </div>
+                <button class="btn btn-primary" style="background-color: #27ae60;" onclick="downloadJsonDatabase()">STIAHNUŤ JSON</button>
+            </div>
+        </aside>
+
+        <!-- Hlavná časť so záznamami -->
+        <main id="contentFrame">
+            <div style="color: var(--text-secondary); text-align: center; margin-top: 50px; font-style: italic;">
+                Načítajte súbor hlavna_db.json pomocou tlačidla v ľavom dolnom rohu.
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Predvolená / Záložná štruktúra databázy pre ukážku
+        let DATABASE = {
+            "databaza_nazov": "ČIFÁRE",
+            "metatagy": {
+                "VŠETKY": [],
+                "NEZARADENÉ": []
+            },
+            "videa": []
+        };
+
+        // Interný stav aplikácie zhodný s explorer.py
+        let text_size = 16;
+        let whole_video = false;
+        let show_tags = false;
+        let min_tags = 0;
+        let max_tags = 10;
+
+        // Načítanie základného prostredia pri otvorení
+        window.onload = function() {
+            autoLoadJson(); // Skúsi hneď načítať lokálny súbor
+            initApp();      // Spustí základné prostredie (ak fetch zlyhá, zobrazí sa prázdne)
+        };
+
+        function initApp() {
+            if (DATABASE.databaza_nazov) {
+                document.getElementById("mainTitle").innerText = DATABASE.databaza_nazov.toUpperCase();
+            }
+            buildCategories();
+            selectCategory("VŠETKY");
+        }
+
+        // Naplnenie dropdownov pre kategórie/okruhy
+        function buildCategories() {
+            const categories = Object.keys(DATABASE.metatagy);
+            
+            const catSelect = document.getElementById("categorySelect");
+            catSelect.innerHTML = "";
+            
+            // Pridanie kategórie VŠETKY na začiatok
+            if (!categories.includes("VŠETKY")) {
+                const opt = document.createElement("option");
+                opt.value = "VŠETKY";
+                opt.innerText = "VŠETKY";
+                catSelect.appendChild(opt);
+            }
+
+            categories.forEach(cat => {
+                const opt = document.createElement("option");
+                opt.value = cat;
+                opt.innerText = cat;
+                catSelect.appendChild(opt);
+            });
+            catSelect.value = "VŠETKY";
+
+            // Naplnenie okruhov v editačnom formulári
+            const tagCatSelect = document.getElementById("tagCategorySelect");
+            tagCatSelect.innerHTML = "";
+            categories.forEach(cat => {
+                if (cat !== "VŠETKY") {
+                    const opt = document.createElement("option");
+                    opt.value = cat;
+                    opt.innerText = cat;
+                    tagCatSelect.appendChild(opt);
+                }
+            });
+            if (!categories.includes("NEZARADENÉ")) {
+                const opt = document.createElement("option");
+                opt.value = "NEZARADENÉ";
+                opt.innerText = "NEZARADENÉ";
+                tagCatSelect.appendChild(opt);
+            }
+            tagCatSelect.value = "NEZARADENÉ";
+        }
+
+        // Zmena okruhu (Kategórie)
+        function selectCategory(vybranyOkruh) {
+            let vsetkyTagy = ["VŠETKY"];
+            
+            if (vybranyOkruh === "VŠETKY") {
+                for (let kat in DATABASE.metatagy) {
+                    if (Array.isArray(DATABASE.metatagy[kat])) {
+                        DATABASE.metatagy[kat].forEach(t => {
+                            if (!vsetkyTagy.includes(t)) vsetkyTagy.push(t);
+                        });
+                    }
+                }
+            } else {
+                let specificke = DATABASE.metatagy[vybranyOkruh] || [];
+                specificke.forEach(t => {
+                    if (!vsetkyTagy.includes(t)) vsetkyTagy.push(t);
+                });
+            }
+
+            const tagsSelect = document.getElementById("tagsSelect");
+            tagsSelect.innerHTML = "";
+            vsetkyTagy.forEach(t => {
+                const opt = document.createElement("option");
+                opt.value = t;
+                opt.innerText = t;
+                tagsSelect.appendChild(opt);
+            });
+            tagsSelect.value = "VŠETKY";
+
+            selectTag("VŠETKY");
+        }
+
+        // Zmena témy (Tagu)
+        function selectTag(vybranyTag) {
+            if (!vybranyTag) {
+                vybranyTag = document.getElementById("tagsSelect").value;
+            }
+
+            const videoSelect = document.getElementById("videoSelect");
+            const stareZvoleneVideo = videoSelect.value;
+
+            let vyfiltrovaneVidea = [];
+            if (vybranyTag === "VŠETKY") {
+                vyfiltrovaneVidea = DATABASE.videa;
+            } else {
+                vyfiltrovaneVidea = DATABASE.videa.filter(vid => vid.tagy && vid.tagy.includes(vybranyTag));
+            }
+
+            let videoIds = ["VŠETKY"];
+            vyfiltrovaneVidea.forEach(vid => {
+                videoIds.push(String(vid.id));
+            });
+
+            videoSelect.innerHTML = "";
+            videoIds.forEach(id => {
+                const opt = document.createElement("option");
+                opt.value = id;
+                opt.innerText = id;
+                videoSelect.appendChild(opt);
+            });
+
+            if (videoIds.includes(stareZvoleneVideo)) {
+                videoSelect.value = stareZvoleneVideo;
+            } else {
+                videoSelect.value = "VŠETKY";
+            }
+
+            let aktualneVideo = videoSelect.value;
+            if (aktualneVideo === "VŠETKY") {
+                buildLog(vyfiltrovaneVidea);
+            } else {
+                let konkretneVideo = DATABASE.videa.filter(vid => String(vid.id) === aktualneVideo);
+                buildLog(konkretneVideo);
+            }
+        }
+
+        // Výber konkrétneho videa
+        function selectVideo(vybraneId) {
+            if (vybraneId === "VŠETKY") {
+                selectTag(document.getElementById("tagsSelect").value);
+            } else {
+                let konkretneVideo = DATABASE.videa.filter(vid => String(vid.id) === vybraneId);
+                buildLog(konkretneVideo);
+            }
+        }
+
+        // Vykreslenie logov do hlavného okna (Replikácia build_log z explorer.py)
+        function buildLog(filtrovaneVidea) {
+            const contentFrame = document.getElementById("contentFrame");
+            contentFrame.innerHTML = "";
+
+            if (!filtrovaneVidea || filtrovaneVidea.length === 0) {
+                contentFrame.innerHTML = '<div style="color: var(--text-secondary); text-align: center; margin-top: 50px; font-style: italic;">Žiadne videá nenašli zhodu alebo databáza je prázdna.</div>';
+                return;
+            }
+
+            const activeTag = document.getElementById("tagsSelect").value;
+            
+            let activeValues = [];
+            if (activeTag === "VŠETKY") {
+                const options = document.getElementById("tagsSelect").options;
+                for (let i = 0; i < options.length; i++) {
+                    activeValues.push(options[i].value);
+                }
+            } else {
+                activeValues = [activeTag];
+            }
+
+            filtrovaneVidea.forEach(vid => {
+                let notesHTML = "";
+                let hasVisibleNotes = false;
+
+                if (vid.poznámky) {
+                    vid.poznámky.forEach(p => {
+                        let matching = false;
+                        
+                        if (whole_video) {
+                            matching = true;
+                        } else {
+                            if (p.tagy) {
+                                for (let i = 0; i < p.tagy.length; i++) {
+                                    let t = p.tagy[i];
+                                    if (activeTag === "VŠETKY") {
+                                        if (activeValues.includes(t) && min_tags <= p.tagy.length && max_tags >= p.tagy.length) {
+                                            matching = true;
+                                            break;
+                                        }
+                                    } else {
+                                        if (t === activeTag && min_tags <= p.tagy.length && max_tags >= p.tagy.length) {
+                                            matching = true;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        if (matching) {
+                            hasVisibleNotes = true;
+                            let tagyRiadok = "";
+                            if (show_tags && p.tagy && p.tagy.length > 0) {
+                                tagyRiadok = `<span class="note-tags">[${p.tagy.join(", ")}]</span>`;
+                            }
+                            notesHTML += `<li class="note-item" style="font-size: ${text_size}px;">  • <strong>${p.cas}</strong> - ${p.text}${tagyRiadok}</li>`;
+                        }
+                    });
+                }
+
+                // Preskočenie celého videa ak nemá poznámky a nie sme v režime "Celé videá"
+                if (!whole_video && !hasVisibleNotes) {
+                    return;
+                }
+
+                // Režim "Celé videá" - kontrola či aspoň jedna poznámka spĺňa vybraný tag
+                if (whole_video && activeTag !== "VŠETKY") {
+                    let nejakyMatch = false;
+                    if (vid.poznámky) {
+                        vid.poznámky.forEach(p => {
+                            if (p.tagy) {
+                                p.tagy.forEach(t => {
+                                    if (t === activeTag && min_tags <= p.tagy.length && max_tags >= p.tagy.length) {
+                                        nejakyMatch = true;
+                                    }
+                                });
+                            }
+                        });
+                    }
+                    if (!nejakyMatch) return;
+                }
+
+                // Vytvorenie kontajneru pre jedno video
+                const videoBox = document.createElement("div");
+                videoBox.className = "video-box";
+
+                let headerText = "";
+                let tagyStr = vid.tagy ? vid.tagy.join(", ") : "";
+                
+                if (whole_video) {
+                    headerText = `Video #${vid.id}  |  Čas od-do: ${vid.cas_od} - ${vid.cas_do} <div class="video-themes">Témy: ${tagyStr}</div>`;
+                } else {
+                    headerText = `Video #${vid.id} Čas od: ${vid.cas_od}`;
+                }
+
+                let headerHTML = "";
+                if (vid.link) {
+                    headerHTML = `<div class="video-header" style="font-size: ${text_size + 2}px;"><span class="video-link" onclick="window.open('${vid.link}', '_blank')">${headerText}</span></div>`;
+                } else {
+                    headerHTML = `<div class="video-header" style="font-size: ${text_size + 2}px;">${headerText}</div>`;
+                }
+
+                videoBox.innerHTML = `
+                    ${headerHTML}
+                    <ul class="notes-list">
+                        ${notesHTML || '<li style="color:var(--text-secondary); font-style:italic; margin-left:20px;">Žiadne poznámky nezodpovedajú filtrom.</li>'}
+                    </ul>
+                `;
+
+                contentFrame.appendChild(videoBox);
+            });
+
+            if (contentFrame.children.length === 0) {
+                contentFrame.innerHTML = '<div style="color: var(--text-secondary); text-align: center; margin-top: 50px; font-style: italic;">Žiadne záznamy nezodpovedajú zvoleným filtrom intervalu tagov.</div>';
+            }
+        }
+
+        // Zväčšovanie / zmenšovanie písma (Zoom)
+        function zoomIn() {
+            text_size += 1;
+            selectTag();
+        }
+
+        function zoomOut() {
+            if (text_size > 8) {
+                text_size -= 1;
+                selectTag();
+            }
+        }
+
+        // Úprava intervalov počtu tagov
+        function updateMin(val) {
+            const sliderMax = document.getElementById("sliderMax");
+            if (parseInt(val) > parseInt(sliderMax.value)) {
+                sliderMax.value = val;
+                max_tags = parseInt(val);
+            }
+            min_tags = parseInt(val);
+            document.getElementById("intervalLabel").innerText = `Interval: ${min_tags} - ${max_tags}`;
+            selectTag();
+        }
+
+        function updateMax(val) {
+            const sliderMin = document.getElementById("sliderMin");
+            if (parseInt(val) < parseInt(sliderMin.value)) {
+                sliderMin.value = val;
+                min_tags = parseInt(val);
+            }
+            max_tags = parseInt(val);
+            document.getElementById("intervalLabel").innerText = `Interval: ${min_tags} - ${max_tags}`;
+            selectTag();
+        }
+
+        function toggleWholeVideo(checked) {
+            whole_video = checked;
+            selectTag();
+        }
+
+        function toggleShowTags(checked) {
+            show_tags = checked;
+            selectTag();
+        }
+
+        // Vyčistenie formulára
+        function clearEntries() {
+            document.getElementById("videoEntry").value = "";
+            document.getElementById("noteEntry").value = "";
+            document.getElementById("timeEntry").value = "";
+            document.getElementById("newTagEntry").value = "";
+            document.getElementById("tagCategorySelect").value = "NEZARADENÉ";
+        }
+
+        // Pridanie/Aktualizácia záznamu do DB v pamäti (Replikácia update_entry)
+        function updateEntry() {
+            const videoIdStr = document.getElementById("videoEntry").value.trim();
+            const noteText = document.getElementById("noteEntry").value.trim();
+            const noteTime = document.getElementById("timeEntry").value.trim();
+            const newTag = document.getElementById("newTagEntry").value.trim();
+            let tagCategory = document.getElementById("tagCategorySelect").value.trim();
+
+            if (!noteText && !newTag) {
+                alert("Chyba: Musíte zadať buď text poznámky alebo nový tag.");
+                return;
+            }
+
+            let najdeneVideo = null;
+            if (videoIdStr) {
+                for (let i = 0; i < DATABASE.videa.length; i++) {
+                    if (String(DATABASE.videa[i].id) === videoIdStr) {
+                        najdeneVideo = DATABASE.videa[i];
+                        break;
+                    }
+                }
+            }
+
+            if (!najdeneVideo) {
+                alert(`Chyba: Video s ID "${videoIdStr}" nebolo v databáze nájdené.`);
+                return;
+            }
+
+            let existingNote = null;
+            if (noteText) {
+                let exists = false;
+                if (!najdeneVideo.poznámky) najdeneVideo.poznámky = [];
+                
+                for (let i = 0; i < najdeneVideo.poznámky.length; i++) {
+                    let note = najdeneVideo.poznámky[i];
+                    if (note.text === noteText || note.cas === noteText) {
+                        exists = true;
+                        existingNote = note;
+                        break;
+                    }
+                }
+
+                if (!exists) {
+                    if (!noteTime) {
+                        alert("CHYBA: Zadajte čas poznámky.");
+                        return;
+                    }
+                    existingNote = { "cas": noteTime, "text": noteText, "tagy": [] };
+                    najdeneVideo.poznámky.push(existingNote);
+                    
+                    // In-place zoradenie poznámok podľa času (MM:SS)
+                    najdeneVideo.poznámky.sort((a, b) => a.cas.localeCompare(b.cas));
+                }
+            }
+
+            if (newTag) {
+                if (!najdeneVideo.tagy) najdeneVideo.tagy = [];
+                if (!najdeneVideo.tagy.includes(newTag)) {
+                    najdeneVideo.tagy.push(newTag);
+                }
+
+                if (existingNote) {
+                    if (!existingNote.tagy) existingNote.tagy = [];
+                    if (!existingNote.tagy.includes(newTag)) {
+                        existingNote.tagy.push(newTag);
+                    }
+                }
+
+                if (!tagCategory) tagCategory = "NEZARADENÉ";
+
+                if (!DATABASE.metatagy[tagCategory]) {
+                    DATABASE.metatagy[tagCategory] = [];
+                }
+                if (!DATABASE.metatagy[tagCategory].includes(newTag)) {
+                    DATABASE.metatagy[tagCategory].push(newTag);
+                }
+
+                buildCategories();
+            }
+
+            selectTag();
+            alert("Záznam bol úspešne upravený v pamäti.");
+        }
+
+        // 1. SPOLOČNÁ FUNKCIA: Spracuje text na JSON a inicializuje aplikáciu
+        function spracujSkontrolovanéData(jsonText, isAuto = false) {
+            try {
+                const parsed = JSON.parse(jsonText);
+                if (parsed.videa && parsed.metatagy) {
+                    DATABASE = parsed;
+                    initApp();
+                    // Alert vyskočí len pri manuálnom nahrávaní, pri automatickom by otravoval
+                    if (!isAuto) alert("Súbor bol úspešne načítaný do prieskumníka!");
+                } else {
+                    if (!isAuto) alert("Chyba: Súbor nemá požadovanú štruktúru (chýbajú kľúče 'videa' alebo 'metatagy').");
+                }
+            } catch (err) {
+                if (!isAuto) alert("Chyba pri parsovaní JSON súboru: " + err.message);
+            }
+        }
+
+        // 2. TVOJA UPRAVENÁ FUNKCIA: Slúži ako manuálna záloha (kliknutím na tlačidlo)
+        function loadJsonFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                spracujSkontrolovanéData(e.target.result, false);
+            };
+            reader.readAsText(file, "UTF-8");
+        }
+
+        // 3. NOVÁ FUNKCIA: Skúsi automaticky stiahnuť súbor z rovnakého priečinka
+        function autoLoadJson() {
+            fetch('./hlavna_db.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Súbor hlavna_db.json sa nenašiel na serveri/v priečinku.");
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    spracujSkontrolovanéData(data, true); // true = tiché načítanie bez alertu
+                    console.log("Databáza hlavna_db.json bola automaticky načítaná.");
+                })
+                .catch(err => {
+                    console.warn("Automatické načítanie zlyhalo (CORS alebo chýbajúci súbor). Použite manuálne tlačidlo. Detaily:", err.message);
+                });
+        }
+        // Stiahnutie upravenej databázy ako JSON súboru (Synchronizácia tagov z on_closing)
+        function downloadJsonDatabase() {
+            DATABASE.videa.forEach(video => {
+                if (video.poznámky) {
+                    video.poznámky.forEach(note => {
+                        if (note.tagy) {
+                            note.tagy.forEach(tag => {
+                                if (!video.tagy.includes(tag)) {
+                                    video.tagy.push(tag);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+
+            const jsonString = JSON.stringify(DATABASE, null, 2);
+            const blob = new Blob([jsonString], { type: "application/json;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", "hlavna_db.json");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
