@@ -7,6 +7,7 @@
       "hlášky",
       "dôležité",
       "príhody",
+      "Záleská",
       "korupcia",
       "obavy",
       "mafia",
@@ -485,7 +486,8 @@
         "Protesty a demonštrácie",
         "Robert Fico",
         "Pavol Gašpar",
-        "Tibor Gašpar"
+        "Tibor Gašpar",
+        "hlášky"
       ],
       "poznámky": [
         {
@@ -539,7 +541,8 @@
           "tagy": [
             "Marek Para",
             "Maroš Žilinka",
-            "Robert Fico"
+            "Robert Fico",
+            "hlášky"
           ]
         },
         {
@@ -548,12 +551,13 @@
           "tagy": [
             "Robert Fico",
             "Pavol Gašpar",
-            "Ľudovít Makó"
+            "Ľudovít Makó",
+            "hlášky"
           ]
         },
         {
           "cas": "24:00",
-          "text": "Už ma kontaktoval Uhrík, ja potrebujem hematom protest",
+          "text": "Už ma kontaktoval Uhrík, ja potrebujem mať protest",
           "tagy": [
             "Robert Fico",
             "Protesty a demonštrácie"
@@ -1278,7 +1282,9 @@
         "Kauza Dobytkár",
         "Norbert Bödör (Noro)",
         "Daniel Lipšic",
-        "Špeciálna prokuratúra"
+        "Špeciálna prokuratúra",
+        "Miroslav Bödör (Starý)",
+        "Pavol Gašpar"
       ],
       "poznámky": [
         {
