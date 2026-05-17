@@ -463,6 +463,11 @@
             </div>
 
             <div class="form-group mobile-hide">
+                <label>Link (URL)</label>
+                <input type="text" id="linkEntry" placeholder="napr. https://youtube.com/...">
+            </div>
+
+            <div class="form-group mobile-hide">
                 <label>Poznámka</label>
                 <input type="text" id="noteEntry">
             </div>
@@ -844,6 +849,7 @@
         // Vyčistenie formulára
         function clearEntries() {
             document.getElementById("videoEntry").value = "";
+            document.getElementById("linkEntry").value = "";
             document.getElementById("noteEntry").value = "";
             document.getElementById("timeEntry").value = "";
             document.getElementById("newTagEntry").value = "";
@@ -853,13 +859,14 @@
         // Pridanie/Aktualizácia záznamu
         function updateEntry() {
             const videoIdStr = document.getElementById("videoEntry").value.trim();
+            const noteLink = document.getElementById("linkEntry").value.trim();
             const noteText = document.getElementById("noteEntry").value.trim();
             const noteTime = document.getElementById("timeEntry").value.trim();
             const newTag = document.getElementById("newTagEntry").value.trim();
             let tagCategory = document.getElementById("tagCategorySelect").value.trim();
 
-            if (!noteText && !newTag) {
-                alert("Chyba: Musíte zadať buď text poznámky alebo nový tag.");
+            if (!noteText && !newTag && !noteLink) {
+                alert("Chyba: Musíte zadať buď link, text poznámky alebo nový tag.");
                 return;
             }
 
@@ -876,6 +883,15 @@
             if (!najdeneVideo) {
                 alert(`Chyba: Video s ID "${videoIdStr}" nebolo v databáze nájdené.`);
                 return;
+            }
+
+            // NOVÁ LOGIKA PRE LINK: Ak je vyplnený a video nemá priradený kľúč "link", pridá sa
+            if (noteLink) {
+                if (!najdeneVideo.hasOwnProperty("link") || !najdeneVideo.link) {
+                    najdeneVideo.link = noteLink;
+                } else {
+                    console.log(`Video #${videoIdStr} už má priradený link. Nový nebol zapísaný.`);
+                }
             }
 
             let existingNote = null;
