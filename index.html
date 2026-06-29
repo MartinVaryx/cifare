@@ -497,7 +497,10 @@
                     <label>Načítať súbor hlavna_db.json</label>
                     <input type="file" id="jsonFileInput" accept=".json" onchange="loadJsonFile(event)">
                 </div>
-                <button class="btn btn-primary" style="background-color: #27ae60;" onclick="downloadJsonDatabase()">STIAHNUŤ JSON</button>
+                <div class="btn-group">
+                    <button class="btn btn-primary" style="background-color: #27ae60;" onclick="saveToLocalStorage()">ULOŽIŤ</button>
+                    <button class="btn btn-primary" style="background-color: #27ae60;" onclick="downloadJsonDatabase()">STIAHNUŤ JSON</button>
+                </div>
             </div>
         </aside>
 
@@ -526,10 +529,14 @@
         let min_tags = 0;
         let max_tags = 10;
 
+        const STORAGE_KEY = "cifare_db";
+
         // Načítanie základného prostredia pri otvorení
         window.onload = function() {
-            autoLoadJson(); // Skúsi hneď načítať lokálny súbor
-            initApp();      // Spustí základné prostredie (ak fetch zlyhá, zobrazí sa prázdne)
+            if (!loadFromLocalStorage()) {
+                autoLoadJson(); // Lokálne úložisko je prázdne, skúsi sa načítať súbor
+            }
+            initApp();      // Spustí základné prostredie (ak oboje zlyhá, zobrazí sa prázdne)
         };
 
         function initApp() {
@@ -945,7 +952,7 @@
             }
 
             selectTag();
-            alert("Záznam bol úspešne upravený v pamäti.");
+            saveToLocalStorage();
         }
 
         function spracujSkontrolovanéData(jsonText, isAuto = false) {
@@ -991,6 +998,30 @@
                 });
         }
 
+        function saveToLocalStorage() {
+            DATABASE.videa.forEach(video => {
+                if (video.poznámky) {
+                    video.poznámky.forEach(note => {
+                        if (note.tagy) {
+                            note.tagy.forEach(tag => {
+                                if (!video.tagy.includes(tag)) {
+                                    video.tagy.push(tag);
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+
+            const jsonString = JSON.stringify(DATABASE, null, 2);
+            try {
+                localStorage.setItem(STORAGE_KEY, jsonString);
+                alert("Databáza bola uložená do lokálneho úložiska prehliadača.");
+            } catch (err) {
+                alert("Chyba pri ukladaní do lokálneho úložiska: " + err.message);
+            }
+        }
+
         function downloadJsonDatabase() {
             DATABASE.videa.forEach(video => {
                 if (video.poznámky) {
@@ -1009,13 +1040,21 @@
             const jsonString = JSON.stringify(DATABASE, null, 2);
             const blob = new Blob([jsonString], { type: "application/json;charset=utf-8;" });
             const url = URL.createObjectURL(blob);
-            
+
             const link = document.createElement("a");
             link.setAttribute("href", url);
             link.setAttribute("download", "hlavna_db.json");
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+        }
+
+        function loadFromLocalStorage() {
+            const data = localStorage.getItem(STORAGE_KEY);
+            if (!data) return false;
+            spracujSkontrolovanéData(data, true);
+            console.log("Databáza bola načítaná z lokálneho úložiska.");
+            return true;
         }
     </script>
 </body>
