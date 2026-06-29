@@ -195,7 +195,8 @@
       "tagy": [
         "Atmosféra na chate",
         "Miroslav Bödör (Starý)",
-        "hlášky"
+        "hlášky",
+        "dôležité"
       ],
       "poznámky": [
         {
@@ -204,6 +205,18 @@
           "tagy": [
             "Atmosféra na chate",
             "Miroslav Bödör (Starý)"
+          ]
+        },
+        {
+          "cas": "26:00",
+          "text": "(Starý Ficovi) Doteraz sme ťa počúvali. (tlačovku)",
+          "tagy": []
+        },
+        {
+          "cas": "27:00",
+          "text": "Para: A čo ten Palo? - Starý: Nevím dopiči, nebere ani mne.",
+          "tagy": [
+            "dôležité"
           ]
         },
         {
